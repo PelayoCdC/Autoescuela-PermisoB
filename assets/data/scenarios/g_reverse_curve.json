@@ -1,0 +1,39 @@
+{
+  "id": "g_reverse_curve",
+  "name": "G Marcha atrás en recta y curva",
+  "description": "Avanza por la recta y la curva a la derecha. Pasada la curva, para a 10 m como mínimo de su final y retrocede en un solo movimiento, despacio y centrado, por la curva y 10 m de recta.",
+  "maneuver": "REVERSE_CURVE",
+  "order": 20,
+  "category": "exam",
+  "startPose": { "x": 0, "y": 0.9, "z": -25, "yawDeg": 0 },
+  "modules": [
+    { "type": "road", "x": 0, "z": -10, "length": 60, "width": 5 },
+    { "type": "road_arc", "width": 5, "arc": { "cx": -12, "cz": 20, "radius": 12, "startDeg": 90, "sweepDeg": -90 } },
+    { "type": "road", "x": -27, "z": 32, "yawDeg": 90, "length": 30, "width": 5 },
+    { "type": "sidewalk", "x": -3.5, "z": -10, "length": 60, "width": 2 },
+    { "type": "sidewalk", "x": 3.5, "z": -10, "length": 60, "width": 2 },
+    { "type": "sidewalk_arc", "width": 2, "arc": { "cx": -12, "cz": 20, "radius": 8.5, "startDeg": 90, "sweepDeg": -90 } },
+    { "type": "sidewalk_arc", "width": 2, "arc": { "cx": -12, "cz": 20, "radius": 15.5, "startDeg": 90, "sweepDeg": -90 } },
+    { "type": "sidewalk", "x": -27, "z": 28.5, "yawDeg": 90, "length": 30, "width": 2 },
+    { "type": "sidewalk", "x": -27, "z": 35.5, "yawDeg": 90, "length": 30, "width": 2 }
+  ],
+  "curbs": [
+    { "name": "right_straight", "points": [[-2.5, -40], [-2.5, 20]] },
+    { "name": "left_straight", "points": [[2.5, -40], [2.5, 20]] },
+    { "name": "inner_arc", "arc": { "cx": -12, "cz": 20, "radius": 9.5, "startDeg": 90, "sweepDeg": -90, "steps": 18 } },
+    { "name": "outer_arc", "arc": { "cx": -12, "cz": 20, "radius": 14.5, "startDeg": 90, "sweepDeg": -90, "steps": 18 } },
+    { "name": "right_exit", "points": [[-12, 29.5], [-42, 29.5]] },
+    { "name": "left_exit", "points": [[-12, 34.5], [-42, 34.5]] }
+  ],
+  "markings": [
+    { "kind": "GUIDE", "name": "axis", "points": [[0, -40], [0, 20]] },
+    { "kind": "GUIDE", "name": "axis_arc", "arc": { "cx": -12, "cz": 20, "radius": 12, "startDeg": 90, "sweepDeg": -90, "steps": 18 } },
+    { "kind": "GUIDE", "name": "axis_exit", "points": [[-12, 32], [-42, 32]] }
+  ],
+  "zones": [
+    { "name": "far_end", "center": [-30, 32], "size": [5, 16], "yawDeg": 90 },
+    { "name": "curve_end", "center": [-12, 32], "size": [1, 1], "yawDeg": 0 },
+    { "name": "reverse_done", "center": [0, 4], "size": [5, 8], "yawDeg": 0 }
+  ],
+  "params": { "stopDistance": 10, "maxCentering": 0.6, "maxSpeedStdDev": 0.4, "timeLimitSec": 300 }
+}

@@ -1,0 +1,38 @@
+sourceSets.main.java.srcDirs = ['src/main/java']
+sourceSets.test.java.srcDirs = ['src/test/java']
+
+dependencies {
+    api "com.badlogicgames.gdx:gdx:$gdxVersion"
+    api "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+    // Físicas del coche (btRaycastVehicle, colisiones con bordillos y conos)
+    api "com.badlogicgames.gdx:gdx-bullet:$gdxVersion"
+    // Mandos (gatillos analógicos para gas, freno y embrague)
+    api "com.badlogicgames.gdx-controllers:gdx-controllers-core:$controllersVersion"
+    // Modelos glTF con materiales PBR (coche y entorno)
+    api "com.github.mgsx-dev.gdx-gltf:gltf:$gltfVersion"
+
+    // Tests: JUnit 5 y el backend headless de libGDX, que pone en pie Gdx.files
+    // para leer assets/data/*.json; las natives de escritorio permiten probar
+    // la física con bullet sin ventana.
+    testImplementation platform('org.junit:junit-bom:5.10.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testImplementation "com.badlogicgames.gdx:gdx-backend-headless:$gdxVersion"
+    testImplementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+    testImplementation "com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-desktop"
+}
+
+test {
+    useJUnitPlatform()
+
+    // Gdx.files.internal(...) y Gdx.files.local(...) resuelven contra el
+    // directorio de trabajo: se apunta a assets/ para leer los datos reales.
+    workingDir = rootProject.file('assets')
+
+    systemProperty 'java.awt.headless', 'true'
+
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+        exceptionFormat = 'full'
+    }
+}

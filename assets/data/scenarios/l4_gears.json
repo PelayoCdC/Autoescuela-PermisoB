@@ -1,0 +1,95 @@
+{
+  "id": "l4_gears",
+  "name": "Cambiar de marcha",
+  "description": "Sube de primera a segunda y a tercera, y reduce a segunda al frenar. Para qué sirve cada marcha y cuándo cambiar.",
+  "maneuver": "TUTORIAL",
+  "category": "lesson",
+  "order": 54,
+  "startPose": { "x": -1.75, "y": 0.9, "z": 0, "yawDeg": 0 },
+  "modules": [
+    { "type": "road", "x": 0, "z": 280, "length": 640, "width": 7 },
+    { "type": "sidewalk", "x": -4.5, "z": 280, "length": 640, "width": 2 },
+    { "type": "sidewalk", "x": 4.5, "z": 280, "length": 640, "width": 2 }
+  ],
+  "curbs": [
+    { "name": "right", "points": [[-3.5, -40], [-3.5, 600]] },
+    { "name": "left", "points": [[3.5, -40], [3.5, 600]] }
+  ],
+  "markings": [ { "kind": "LANE", "name": "center", "points": [[0, -40], [0, 600]], "width": 0.12 } ],
+  "zones": [],
+  "params": { "timeLimitSec": 100000 },
+  "lesson": {
+    "summary": [
+      "Las marchas cortas (primera, segunda) dan mucha fuerza y poca velocidad; las largas, al revés.",
+      "Para subir de marcha: soltar gas, embrague a fondo, siguiente marcha, soltar el embrague con suavidad y volver a acelerar.",
+      "En un diésel como el Clio se sube de marcha hacia las 2.000 rpm (entre 1.500 y 2.000 si quieres ahorrar combustible).",
+      "Para reducir: frenar hasta la velocidad adecuada y meter la marcha más corta con el embrague pisado.",
+      "Orientativo: 1.ª para salir, 2.ª hasta unos 30 km/h, 3.ª hasta 50, 4.ª hasta 70 y 5.ª por encima."
+    ],
+    "steps": [
+      {
+        "title": "Para qué sirven las marchas",
+        "text": "El motor solo funciona bien en un margen de revoluciones. Las marchas adaptan su giro a la velocidad de las ruedas: la primera da mucha fuerza y poca velocidad, para salir; las largas permiten ir rápido con el motor tranquilo. Cuando el motor sube de vueltas, toca cambiar a una marcha más larga.",
+        "ack": true,
+        "highlight": ["gear", "tacho"]
+      },
+      {
+        "title": "Sal en primera",
+        "text": "Sal como ya sabes y acelera en primera hasta 10 km/h. Mira el cuentarrevoluciones: en primera sube enseguida.",
+        "goals": [ { "type": "gear", "value": 1 }, { "type": "speed", "min": 10 } ],
+        "hold": 0.2,
+        "highlight": ["tacho", "speed"],
+        "hint": "{CLUTCH} a fondo, {GEAR_1}, {HANDBRAKE}, mantén {CLUTCH_HALF} con un poco de {THROTTLE} y, cuando avance, suelta."
+      },
+      {
+        "title": "Cambia a segunda",
+        "text": "Sigue estos pasos seguidos: suelta el gas, pisa el embrague a fondo ({CLUTCH}), mete segunda ({GEAR_2}), suelta el embrague con suavidad (más rápido que al salir) y vuelve a acelerar.",
+        "goals": [ { "type": "gear", "value": 2 }, { "type": "clutch", "max": 0.05 }, { "type": "speed", "min": 6 } ],
+        "hold": 0.4,
+        "highlight": ["clutch", "gear"],
+        "hint": "Gas fuera, {CLUTCH}, {GEAR_2}, suelta {CLUTCH} y acelera con {THROTTLE}. También puedes subir con {GEAR_UP}."
+      },
+      {
+        "title": "Acelera en segunda",
+        "text": "Acelera hasta 25 km/h. La segunda empuja menos que la primera pero llega más lejos: el motor sube de vueltas más despacio.",
+        "goals": [ { "type": "gear", "value": 2 }, { "type": "speed", "min": 25 } ],
+        "hold": 0.2,
+        "highlight": ["tacho", "speed"]
+      },
+      {
+        "title": "Cambia a tercera",
+        "text": "Repite el cambio: gas fuera, embrague, tercera ({GEAR_3}), suelta el embrague y acelera. Fíjate en cómo bajan las revoluciones al cambiar.",
+        "goals": [ { "type": "gear", "value": 3 }, { "type": "clutch", "max": 0.05 }, { "type": "speed", "min": 18 } ],
+        "hold": 0.4,
+        "highlight": ["clutch", "gear", "tacho"]
+      },
+      {
+        "title": "Acelera en tercera",
+        "text": "Acelera hasta 40 km/h en tercera. Es una marcha cómoda para circular por ciudad a 30-50 km/h.",
+        "goals": [ { "type": "gear", "value": 3 }, { "type": "speed", "min": 40 } ],
+        "hold": 0.2,
+        "highlight": ["speed"]
+      },
+      {
+        "title": "Reduce a segunda",
+        "text": "Para ir más despacio, por ejemplo antes de girar, se frena y se reduce. Frena suavemente ({BRAKE}) hasta unos 25 km/h, pisa el embrague, mete segunda ({GEAR_2}) y suelta el embrague con suavidad: el freno motor te ayudará a retener.",
+        "goals": [ { "type": "gear", "value": 2 }, { "type": "speed", "max": 30 }, { "type": "clutch", "max": 0.05 } ],
+        "hold": 0.4,
+        "highlight": ["brake", "clutch", "gear"],
+        "hint": "Reduce cuando ya vayas a menos de 30 km/h: si metes segunda muy deprisa, el motor se revoluciona."
+      },
+      {
+        "title": "Detente",
+        "text": "Para el coche: freno progresivo, embrague a fondo antes de pararte y, ya parado, freno de mano ({HANDBRAKE}) y punto muerto ({GEAR_N}).",
+        "goals": [ { "type": "stopped" }, { "type": "gear", "value": 0 }, { "type": "handbrake", "value": 1 } ],
+        "hold": 0.3,
+        "highlight": ["brake", "clutch", "handbrake"]
+      },
+      {
+        "title": "¡Ya sabes cambiar de marcha!",
+        "text": "Practica en la explanada de pruebas hasta que el cambio sea un gesto fluido. Truco: escucha el motor; si suena muy revolucionado, toca subir; si tiembla o le cuesta, toca bajar.",
+        "ack": true
+      }
+    ]
+  }
+}

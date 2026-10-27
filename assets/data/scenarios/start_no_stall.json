@@ -1,0 +1,27 @@
+{
+  "id": "start_no_stall",
+  "name": "Arrancar sin calar",
+  "description": "Con el motor apagado: pisa el embrague, arranca con Intro, mete primera y avanza 25 m sin calar. Suelta el embrague despacio con un poco de gas.",
+  "maneuver": "START_NO_STALL",
+  "order": 2,
+  "startPose": { "x": -1.75, "y": 0.9, "z": 0, "yawDeg": 0 },
+  "modules": [
+    { "type": "road", "x": 0, "z": 10, "length": 80, "width": 7 },
+    { "type": "sidewalk", "x": -4.5, "z": 10, "length": 80, "width": 2 },
+    { "type": "sidewalk", "x": 4.5, "z": 10, "length": 80, "width": 2 },
+    { "type": "cone", "x": -3.0, "z": 25, "name": "meta_d" },
+    { "type": "cone", "x": -0.5, "z": 25, "name": "meta_i" }
+  ],
+  "curbs": [
+    { "name": "right", "points": [[-3.5, -30], [-3.5, 50]] },
+    { "name": "left", "points": [[3.5, -30], [3.5, 50]] }
+  ],
+  "markings": [
+    { "kind": "LANE", "name": "center", "points": [[0, -30], [0, 50]], "width": 0.12 },
+    { "kind": "STOP", "name": "meta", "points": [[-3.4, 25], [-0.1, 25]], "width": 0.3 }
+  ],
+  "zones": [
+    { "name": "finish", "center": [-1.75, 28], "size": [3.4, 6], "yawDeg": 0 }
+  ],
+  "params": { "engineOff": true, "timeLimitSec": 180 }
+}

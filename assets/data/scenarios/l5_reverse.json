@@ -1,0 +1,91 @@
+{
+  "id": "l5_reverse",
+  "name": "Marcha atrás",
+  "description": "Mete la marcha atrás con el coche parado, mira hacia atrás y retrocede despacio controlando la velocidad con el embrague hasta la zona marcada.",
+  "maneuver": "TUTORIAL",
+  "category": "lesson",
+  "order": 55,
+  "startPose": { "x": -1.75, "y": 0.9, "z": 0, "yawDeg": 0 },
+  "modules": [
+    { "type": "road", "x": 0, "z": 20, "length": 140, "width": 7 },
+    { "type": "sidewalk", "x": -4.5, "z": 20, "length": 140, "width": 2 },
+    { "type": "sidewalk", "x": 4.5, "z": 20, "length": 140, "width": 2 },
+    { "type": "cone", "x": -3.0, "z": -16.5, "name": "fondo_d" },
+    { "type": "cone", "x": -0.5, "z": -16.5, "name": "fondo_i" }
+  ],
+  "curbs": [
+    { "name": "right", "points": [[-3.5, -50], [-3.5, 90]] },
+    { "name": "left", "points": [[3.5, -50], [3.5, 90]] }
+  ],
+  "markings": [
+    { "kind": "LANE", "name": "center", "points": [[0, -50], [0, 90]], "width": 0.12 },
+    { "kind": "BAY", "name": "target", "center": [-1.75, -11], "size": [2.8, 6.5], "yawDeg": 0 }
+  ],
+  "zones": [
+    { "name": "target", "center": [-1.75, -11], "size": [2.8, 3.0], "yawDeg": 0 }
+  ],
+  "params": { "timeLimitSec": 100000 },
+  "lesson": {
+    "summary": [
+      "La marcha atrás solo entra con el coche totalmente parado y el embrague pisado.",
+      "Antes de retroceder hay que mirar hacia atrás y por los espejos; el reglamento limita la marcha atrás a 15 m como máximo y no permite usarla para incorporarse.",
+      "Marcha atrás se va muy despacio: la velocidad se controla con el embrague en el punto de fricción, casi sin gas.",
+      "Para detenerte, embrague a fondo y freno."
+    ],
+    "steps": [
+      {
+        "title": "La marcha atrás",
+        "text": "Detrás de ti hay una plaza marcada. Vas a llegar a ella marcha atrás. La marcha atrás tiene mucha fuerza, por eso se usa despacio y en recorridos cortos: el reglamento la limita a 15 metros como máximo y no permite usarla para incorporarse a la circulación. En el Clio, la palanca tiene un anillo que hay que levantar para meterla.",
+        "ack": true
+      },
+      {
+        "title": "Embrague y marcha atrás",
+        "text": "Con el coche parado, pisa el embrague a fondo ({CLUTCH}) y mete la marcha atrás ({GEAR_R}). En el cuadro aparece la R y en un coche real se encienden las luces blancas traseras.",
+        "goals": [ { "type": "gear", "value": -1 }, { "type": "clutch", "min": 0.9 } ],
+        "hold": 0.3,
+        "highlight": ["gear", "clutch"]
+      },
+      {
+        "title": "Mira hacia atrás",
+        "text": "Antes de moverte, comprueba que no viene nadie: gira la cabeza por encima del hombro derecho para mirar por la luneta trasera ({LOOK_BACK}) y revisa los espejos.",
+        "goals": [ { "type": "look" } ],
+        "hold": 0.8
+      },
+      {
+        "title": "Quita el freno de mano",
+        "text": "Con el embrague todavía pisado, quita el freno de mano ({HANDBRAKE}).",
+        "goals": [ { "type": "handbrake", "value": 0 } ],
+        "hold": 0.2,
+        "highlight": ["handbrake"]
+      },
+      {
+        "title": "Retrocede despacio",
+        "text": "Suelta {CLUTCH} y mantén {CLUTCH_HALF}: en el punto de fricción el coche retrocede despacio sin necesidad de gas. Si va demasiado rápido, pisa un poco más el embrague. Mira atrás mientras retrocedes ({LOOK_BACK}).",
+        "goals": [ { "type": "distance", "meters": -5 } ],
+        "hold": 0.1,
+        "highlight": ["clutch"],
+        "hint": "Mantén {CLUTCH_HALF}. Si el coche no se mueve, da un toque suave de gas ({THROTTLE})."
+      },
+      {
+        "title": "Para dentro de la plaza",
+        "text": "Sigue retrocediendo hasta que el coche quede dentro de la plaza marcada, entre los conos del fondo y la línea delantera. Para con el embrague a fondo ({CLUTCH}) y el freno ({BRAKE}).",
+        "goals": [ { "type": "stopped" }, { "type": "zone", "zone": "target", "label": "Coche dentro de la plaza marcada" } ],
+        "hold": 0.8,
+        "highlight": ["clutch", "brake"],
+        "hint": "Si te pasas, mete primera y avanza un poco: corregir es parte de la maniobra."
+      },
+      {
+        "title": "Asegura el coche",
+        "text": "Freno de mano ({HANDBRAKE}) y punto muerto ({GEAR_N}).",
+        "goals": [ { "type": "handbrake", "value": 1 }, { "type": "gear", "value": 0 } ],
+        "hold": 0.3,
+        "highlight": ["handbrake", "gear"]
+      },
+      {
+        "title": "¡Marcha atrás dominada!",
+        "text": "Con esto ya puedes practicar las maniobras del examen: el estacionamiento en línea y en batería y la marcha atrás en curva usan esta misma técnica.",
+        "ack": true
+      }
+    ]
+  }
+}

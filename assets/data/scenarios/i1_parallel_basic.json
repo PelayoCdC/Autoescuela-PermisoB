@@ -1,0 +1,32 @@
+{
+  "id": "i1_parallel_basic",
+  "name": "I.1 Estacionamiento en línea (hueco amplio)",
+  "description": "Aparca marcha atrás entre los dos coches de la derecha en tres movimientos como máximo, a menos de 30 cm del bordillo y paralelo. Después sal del hueco en tres movimientos como máximo.",
+  "maneuver": "PARALLEL_PARKING",
+  "order": 10,
+  "category": "exam",
+  "startPose": { "x": -1.9, "y": 0.9, "z": -14, "yawDeg": 0 },
+  "modules": [
+    { "type": "road", "x": 0, "z": 0, "length": 120, "width": 10 },
+    { "type": "sidewalk", "x": -6, "z": 0, "length": 120, "width": 2, "curbHeight": 0.14 },
+    { "type": "sidewalk", "x": 6, "z": 0, "length": 120, "width": 2, "curbHeight": 0.14 },
+    { "type": "parked_car", "x": -4.05, "z": 0, "color": "b0b2b8" },
+    { "type": "parked_car", "x": -4.05, "z": 12.5, "color": "263a75" },
+    { "type": "parked_car", "x": -4.05, "z": -8, "color": "1a1a1f" },
+    { "type": "parked_car", "x": 4.05, "z": 6, "yawDeg": 180, "color": "8a2420" },
+    { "type": "parked_car", "x": 4.05, "z": -6, "yawDeg": 180, "color": "b0b2b8" }
+  ],
+  "curbs": [
+    { "name": "right", "points": [[-5, -60], [-5, 60]] },
+    { "name": "left", "points": [[5, -60], [5, 60]] }
+  ],
+  "markings": [
+    { "kind": "LANE", "name": "center", "points": [[0, -60], [0, 60]], "width": 0.12 },
+    { "kind": "BAY", "name": "bay", "center": [-4.0, 6.25], "size": [2.0, 8.5], "yawDeg": 0 }
+  ],
+  "zones": [
+    { "name": "finish", "center": [-3.9, 6.25], "size": [2.4, 8.5], "yawDeg": 0 },
+    { "name": "exit_done", "center": [-1.9, 26], "size": [5, 10], "yawDeg": 0 }
+  ],
+  "params": { "maxMovements": 3, "maxCurbDistance": 0.30, "timeLimitSec": 300, "maxAlignmentDeg": 5 }
+}

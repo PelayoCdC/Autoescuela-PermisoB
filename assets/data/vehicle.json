@@ -1,0 +1,71 @@
+{
+  "name": "Renault Clio III 1.5 dCi 85",
+  "mass": 1165,
+  "width": 1.72,
+  "height": 1.45,
+  "length": 3.99,
+  "comHeight": 0.38,
+  "groundClearance": 0.16,
+  "wheelBase": 2.575,
+  "track": 1.47,
+  "comOffsetZ": 0.15,
+  "wheelRadius": 0.30,
+  "wheelWidth": 0.185,
+  "eyeX": 0.37,
+  "eyeY": 0.80,
+  "eyeZ": -0.30,
+  "eyeOverride": true,
+  "suspension": {
+    "stiffness": 30,
+    "dampingCompression": 3.3,
+    "dampingRelaxation": 5.5,
+    "restLength": 0.22,
+    "maxTravelCm": 12,
+    "maxForce": 12000,
+    "frictionSlip": 2.5,
+    "rollInfluence": 0.1
+  },
+  "steering": {
+    "maxAngleDeg": 35,
+    "wheelTurns": 2.7,
+    "rateDegPerSec": 90,
+    "returnDegPerSec": 140
+  },
+  "engine": {
+    "idleRpm": 800,
+    "redlineRpm": 4500,
+    "revLimitRpm": 4800,
+    "stallRpm": 450,
+    "inertia": 0.20,
+    "idleTorqueMax": 90,
+    "idleKp": 0.5,
+    "dragC0": 12,
+    "dragC1": 9,
+    "starterTorque": 45,
+    "starterTime": 0.8,
+    "torqueCurve": [[0, 0], [500, 60], [800, 100], [1250, 150], [1900, 200], [2500, 195], [3000, 180], [3750, 160], [4500, 110], [4800, 0]]
+  },
+  "clutch": {
+    "maxTorque": 230,
+    "stiffness": 60,
+    "bitePointLow": 0.35,
+    "bitePointHigh": 0.70,
+    "pressRate": 6,
+    "releaseRate": 1.6
+  },
+  "gearbox": {
+    "ratios": [3.73, 2.05, 1.32, 0.97, 0.76],
+    "reverse": 3.55,
+    "finalDrive": 3.59,
+    "efficiency": 0.9,
+    "shiftTime": 0.25,
+    "drivenWheels": [0, 1]
+  },
+  "brakes": {
+    "maxForce": 90,
+    "frontBias": 0.65,
+    "handbrakeForce": 60,
+    "rollingResistance": 0.012,
+    "dragArea": 0.68
+  }
+}

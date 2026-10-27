@@ -1,0 +1,872 @@
+{
+  "id": "exam_route",
+  "name": "Examen práctico: recorrido urbano",
+  "description": "Recorrido por la ciudad siguiendo las indicaciones del examinador: paso de peatones, STOP con tráfico, glorieta y parada final.",
+  "maneuver": "ROUTE",
+  "order": 90,
+  "category": "exam",
+  "startPose": {
+    "x": -1.75,
+    "y": 0.9,
+    "z": -15,
+    "yawDeg": 0
+  },
+  "modules": [
+    {
+      "type": "road",
+      "x": 0,
+      "z": 60.5,
+      "length": 171,
+      "width": 7
+    },
+    {
+      "type": "road",
+      "x": 0,
+      "z": 204.5,
+      "length": 61,
+      "width": 7
+    },
+    {
+      "type": "road",
+      "x": 0,
+      "z": 80,
+      "length": 190,
+      "width": 7,
+      "yawDeg": 90
+    },
+    {
+      "type": "road_arc",
+      "width": 8,
+      "arc": {
+        "cx": 0,
+        "cz": 160,
+        "radius": 10,
+        "startDeg": 0,
+        "sweepDeg": 360
+      }
+    },
+    {
+      "type": "island",
+      "x": 0,
+      "z": 160,
+      "radius": 6,
+      "height": 0.3,
+      "color": "4a7a3a"
+    },
+    {
+      "type": "road",
+      "x": -54.5,
+      "z": 160,
+      "length": 81,
+      "width": 7,
+      "yawDeg": 90
+    },
+    {
+      "type": "road",
+      "x": 54.5,
+      "z": 160,
+      "length": 81,
+      "width": 7,
+      "yawDeg": 90
+    },
+    {
+      "type": "sidewalk",
+      "x": -4.5,
+      "z": 25,
+      "length": 100,
+      "width": 2
+    },
+    {
+      "type": "sidewalk",
+      "x": 4.5,
+      "z": 25,
+      "length": 100,
+      "width": 2
+    },
+    {
+      "type": "sidewalk",
+      "x": -4.5,
+      "z": 114,
+      "length": 58,
+      "width": 2
+    },
+    {
+      "type": "sidewalk",
+      "x": 4.5,
+      "z": 114,
+      "length": 58,
+      "width": 2
+    },
+    {
+      "type": "sidewalk",
+      "x": -4.5,
+      "z": 206,
+      "length": 58,
+      "width": 2
+    },
+    {
+      "type": "sidewalk",
+      "x": 4.5,
+      "z": 206,
+      "length": 58,
+      "width": 2
+    },
+    {
+      "type": "sidewalk",
+      "x": -50,
+      "z": 75.5,
+      "length": 90,
+      "width": 2,
+      "yawDeg": 90
+    },
+    {
+      "type": "sidewalk",
+      "x": -50,
+      "z": 84.5,
+      "length": 90,
+      "width": 2,
+      "yawDeg": 90
+    },
+    {
+      "type": "sidewalk",
+      "x": 50,
+      "z": 75.5,
+      "length": 90,
+      "width": 2,
+      "yawDeg": 90
+    },
+    {
+      "type": "sidewalk",
+      "x": 50,
+      "z": 84.5,
+      "length": 90,
+      "width": 2,
+      "yawDeg": 90
+    },
+    {
+      "type": "sidewalk",
+      "x": -56,
+      "z": 155.5,
+      "length": 78,
+      "width": 2,
+      "yawDeg": 90
+    },
+    {
+      "type": "sidewalk",
+      "x": -56,
+      "z": 164.5,
+      "length": 78,
+      "width": 2,
+      "yawDeg": 90
+    },
+    {
+      "type": "sidewalk",
+      "x": 56,
+      "z": 155.5,
+      "length": 78,
+      "width": 2,
+      "yawDeg": 90
+    },
+    {
+      "type": "sidewalk",
+      "x": 56,
+      "z": 164.5,
+      "length": 78,
+      "width": 2,
+      "yawDeg": 90
+    },
+    {
+      "type": "sidewalk_arc",
+      "width": 2,
+      "arc": {
+        "cx": 0,
+        "cz": 160,
+        "radius": 15,
+        "startDeg": 20,
+        "sweepDeg": 50
+      }
+    },
+    {
+      "type": "sidewalk_arc",
+      "width": 2,
+      "arc": {
+        "cx": 0,
+        "cz": 160,
+        "radius": 15,
+        "startDeg": 110,
+        "sweepDeg": 50
+      }
+    },
+    {
+      "type": "sidewalk_arc",
+      "width": 2,
+      "arc": {
+        "cx": 0,
+        "cz": 160,
+        "radius": 15,
+        "startDeg": 200,
+        "sweepDeg": 50
+      }
+    },
+    {
+      "type": "sidewalk_arc",
+      "width": 2,
+      "arc": {
+        "cx": 0,
+        "cz": 160,
+        "radius": 15,
+        "startDeg": 290,
+        "sweepDeg": 50
+      }
+    },
+    {
+      "type": "sign",
+      "x": -4.2,
+      "z": 35,
+      "yawDeg": 180,
+      "sign": "crosswalk"
+    },
+    {
+      "type": "sign",
+      "x": 4.2,
+      "z": 45,
+      "yawDeg": 0,
+      "sign": "crosswalk"
+    },
+    {
+      "type": "sign",
+      "x": -4.2,
+      "z": 74,
+      "yawDeg": 180,
+      "sign": "stop"
+    },
+    {
+      "type": "sign",
+      "x": 4.2,
+      "z": 86,
+      "yawDeg": 0,
+      "sign": "stop"
+    },
+    {
+      "type": "sign",
+      "x": -4.2,
+      "z": 143,
+      "yawDeg": 180,
+      "sign": "yield"
+    }
+  ],
+  "markings": [
+    {
+      "kind": "LANE",
+      "points": [
+        [
+          0,
+          -25
+        ],
+        [
+          0,
+          36
+        ]
+      ],
+      "width": 0.12
+    },
+    {
+      "kind": "LANE",
+      "points": [
+        [
+          0,
+          44
+        ],
+        [
+          0,
+          74
+        ]
+      ],
+      "width": 0.12
+    },
+    {
+      "kind": "LANE",
+      "points": [
+        [
+          0,
+          86
+        ],
+        [
+          0,
+          145
+        ]
+      ],
+      "width": 0.12
+    },
+    {
+      "kind": "LANE",
+      "points": [
+        [
+          0,
+          176
+        ],
+        [
+          0,
+          235
+        ]
+      ],
+      "width": 0.12
+    },
+    {
+      "kind": "LANE",
+      "points": [
+        [
+          -95,
+          80
+        ],
+        [
+          -5,
+          80
+        ]
+      ],
+      "width": 0.12
+    },
+    {
+      "kind": "LANE",
+      "points": [
+        [
+          5,
+          80
+        ],
+        [
+          95,
+          80
+        ]
+      ],
+      "width": 0.12
+    },
+    {
+      "kind": "LANE",
+      "points": [
+        [
+          -95,
+          160
+        ],
+        [
+          -15,
+          160
+        ]
+      ],
+      "width": 0.12
+    },
+    {
+      "kind": "LANE",
+      "points": [
+        [
+          15,
+          160
+        ],
+        [
+          95,
+          160
+        ]
+      ],
+      "width": 0.12
+    },
+    {
+      "kind": "STOP",
+      "points": [
+        [
+          -3.5,
+          75.7
+        ],
+        [
+          0,
+          75.7
+        ]
+      ],
+      "width": 0.4
+    },
+    {
+      "kind": "STOP",
+      "points": [
+        [
+          0,
+          84.3
+        ],
+        [
+          3.5,
+          84.3
+        ]
+      ],
+      "width": 0.4
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          -3,
+          38.5
+        ],
+        [
+          -3,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          -2,
+          38.5
+        ],
+        [
+          -2,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          -1,
+          38.5
+        ],
+        [
+          -1,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          0,
+          38.5
+        ],
+        [
+          0,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          1,
+          38.5
+        ],
+        [
+          1,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          2,
+          38.5
+        ],
+        [
+          2,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          3,
+          38.5
+        ],
+        [
+          3,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    }
+  ],
+  "zones": [
+    {
+      "name": "after_crosswalk",
+      "center": [
+        -1.75,
+        56
+      ],
+      "size": [
+        3.6,
+        6
+      ],
+      "yawDeg": 0
+    },
+    {
+      "name": "stop_zone",
+      "center": [
+        -1.75,
+        71.6
+      ],
+      "size": [
+        3.6,
+        8
+      ],
+      "yawDeg": 0
+    },
+    {
+      "name": "after_cross",
+      "center": [
+        -1.75,
+        100
+      ],
+      "size": [
+        3.6,
+        8
+      ],
+      "yawDeg": 0
+    },
+    {
+      "name": "exit_signal",
+      "center": [
+        7,
+        167
+      ],
+      "size": [
+        14,
+        14
+      ],
+      "yawDeg": 0
+    },
+    {
+      "name": "exit3",
+      "center": [
+        26,
+        160
+      ],
+      "size": [
+        10,
+        7
+      ],
+      "yawDeg": 0
+    },
+    {
+      "name": "finish",
+      "center": [
+        70,
+        161.75
+      ],
+      "size": [
+        10,
+        3.6
+      ],
+      "yawDeg": 0
+    },
+    {
+      "name": "wrong_b_west",
+      "center": [
+        -30,
+        80
+      ],
+      "size": [
+        10,
+        7
+      ],
+      "yawDeg": 0
+    },
+    {
+      "name": "wrong_b_east",
+      "center": [
+        30,
+        80
+      ],
+      "size": [
+        10,
+        7
+      ],
+      "yawDeg": 0
+    },
+    {
+      "name": "wrong_exit1",
+      "center": [
+        -26,
+        160
+      ],
+      "size": [
+        10,
+        7
+      ],
+      "yawDeg": 0
+    },
+    {
+      "name": "wrong_exit2",
+      "center": [
+        0,
+        186
+      ],
+      "size": [
+        7,
+        10
+      ],
+      "yawDeg": 0
+    }
+  ],
+  "route": [
+    {
+      "say": "Inicie la marcha y siga recto por esta calle. Velocidad máxima: 30 km/h. Atento al paso de peatones.",
+      "zone": "after_crosswalk",
+      "speedLimit": 30
+    },
+    {
+      "say": "En el cruce hay un STOP. Deténgase antes de la línea y, cuando pueda, siga recto.",
+      "zone": "after_cross",
+      "speedLimit": 30,
+      "stopZone": "stop_zone",
+      "wrong": [
+        "wrong_b_west",
+        "wrong_b_east"
+      ]
+    },
+    {
+      "say": "En la glorieta, tome la tercera salida, a la izquierda. Ceda el paso a los que ya circulan y ponga el intermitente derecho antes de salir.",
+      "zone": "exit3",
+      "speedLimit": 30,
+      "signal": "right",
+      "signalZone": "exit_signal",
+      "wrong": [
+        "wrong_exit1",
+        "wrong_exit2"
+      ]
+    },
+    {
+      "say": "Siga por esta calle y deténgase a la derecha, en la zona señalada.",
+      "zone": "finish",
+      "speedLimit": 30,
+      "park": true
+    }
+  ],
+  "traffic": [
+    {
+      "type": "pedestrian",
+      "path": [
+        [
+          -5,
+          39.4
+        ],
+        [
+          5,
+          39.4
+        ]
+      ],
+      "speedKmh": 4.5,
+      "loop": false,
+      "pingPong": true,
+      "pause": 3,
+      "triggerDistance": 30
+    },
+    {
+      "type": "pedestrian",
+      "path": [
+        [
+          5,
+          40.6
+        ],
+        [
+          -5,
+          40.6
+        ]
+      ],
+      "speedKmh": 4,
+      "loop": false,
+      "pingPong": true,
+      "pause": 5,
+      "delay": 4,
+      "triggerDistance": 30
+    },
+    {
+      "type": "car",
+      "path": [
+        [
+          -95,
+          81.75
+        ],
+        [
+          95,
+          81.75
+        ]
+      ],
+      "speedKmh": 35,
+      "count": 2,
+      "gap": 95,
+      "offset": 20
+    },
+    {
+      "type": "car",
+      "path": [
+        [
+          95,
+          78.25
+        ],
+        [
+          -95,
+          78.25
+        ]
+      ],
+      "speedKmh": 35,
+      "count": 2,
+      "gap": 95,
+      "offset": 65
+    },
+    {
+      "type": "car",
+      "path": [
+        [
+          1.75,
+          232
+        ],
+        [
+          1.75,
+          176
+        ],
+        [
+          1.74,
+          169.85
+        ],
+        [
+          4.38,
+          168.99
+        ],
+        [
+          6.69,
+          167.43
+        ],
+        [
+          8.48,
+          165.3
+        ],
+        [
+          9.61,
+          162.76
+        ],
+        [
+          10,
+          160
+        ],
+        [
+          9.61,
+          157.24
+        ],
+        [
+          8.48,
+          154.7
+        ],
+        [
+          6.69,
+          152.57
+        ],
+        [
+          4.38,
+          151.01
+        ],
+        [
+          1.74,
+          150.15
+        ],
+        [
+          1.75,
+          144
+        ],
+        [
+          1.75,
+          -28
+        ]
+      ],
+      "speedKmh": 30,
+      "count": 2,
+      "gap": 130,
+      "offset": 30
+    },
+    {
+      "type": "car",
+      "path": [
+        [
+          -95,
+          161.75
+        ],
+        [
+          -16,
+          161.75
+        ],
+        [
+          -10,
+          160
+        ],
+        [
+          -9.61,
+          162.76
+        ],
+        [
+          -8.48,
+          165.3
+        ],
+        [
+          -6.69,
+          167.43
+        ],
+        [
+          -4.38,
+          168.99
+        ],
+        [
+          -1.74,
+          169.85
+        ],
+        [
+          1.05,
+          169.95
+        ],
+        [
+          3.75,
+          169.27
+        ],
+        [
+          6.16,
+          167.88
+        ],
+        [
+          8.09,
+          165.88
+        ],
+        [
+          9.4,
+          163.42
+        ],
+        [
+          9.98,
+          160.7
+        ],
+        [
+          16,
+          161.75
+        ],
+        [
+          95,
+          161.75
+        ]
+      ],
+      "speedKmh": 30,
+      "count": 1,
+      "gap": 100,
+      "offset": 40
+    }
+  ],
+  "params": {
+    "timeLimitSec": 600
+  }
+}

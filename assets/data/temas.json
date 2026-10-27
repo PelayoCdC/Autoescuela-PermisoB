@@ -1,0 +1,222 @@
+[
+  {
+    "id": "t01",
+    "titulo": "Normas generales de circulación",
+    "orden": 1,
+    "resumen": "La vía, sus partes, los usuarios y la posición en la calzada",
+    "secciones": [
+      {
+        "titulo": "Partes de la vía",
+        "texto": "# La vía y sus partes\nLa **calzada** es la parte de la vía destinada a la circulación de vehículos; puede dividirse en **carriles**. El **arcén** es la franja longitudinal pavimentada contigua a la calzada, no destinada al uso de automóviles salvo circunstancias excepcionales. La **acera** es la zona para peatones.\n\n- Por el **arcén derecho**, si es transitable y suficiente, deben circular los vehículos de tracción animal, los vehículos especiales de hasta 3.500 kg, los ciclos, los ciclomotores y los vehículos para personas de movilidad reducida (RGC art. 36.1).\n- Un turismo solo puede circular por el arcén en caso de emergencia o avería, a velocidad reducida.\n- Fuera de poblado, los peatones deben caminar por la **izquierda** (de frente al tráfico), salvo que sea más seguro ir por la derecha. Quien empuja una bicicleta, un ciclomotor o un patinete camina por la **derecha** (art. 122).\n\n## Ciclistas, patinetes y plataforma única\n- Los ciclistas pueden circular en **columna de a dos**, pero deben ponerse en **hilera** en tramos sin visibilidad, de noche o con visibilidad reducida (art. 36.2).\n- Patinetes eléctricos (VMP): edad mínima **15 años** y **casco** obligatorio (arts. 155.3 y 118.3, desde el 1-10-2026). Prohibidos en vías interurbanas (salvo vías ciclistas), travesías, autopistas, autovías, túneles urbanos y aceras (arts. 38.4 y 152.1).\n- En las calles de **plataforma única** (calzada y acera al mismo nivel), el peatón tiene prioridad en cualquier punto de la calzada."
+      },
+      {
+        "titulo": "Posición en la calzada",
+        "texto": "# Regla general\nSe circula por la **derecha**, lo más cerca posible del borde derecho de la calzada en vías de doble sentido, dejando libre la parte izquierda.\n\n- En calzadas con **dos o más carriles por sentido** fuera de poblado se circula por el carril derecho; el izquierdo se usa para adelantar y se vuelve al derecho después.\n- Dentro de poblado, en calzadas con varios carriles por sentido, se puede usar el que mejor convenga al destino, sin entorpecer.\n- En calzadas de **tres carriles** y doble sentido, el carril central no se usa como carril de circulación salvo para adelantar o girar a la izquierda.\n- Las **glorietas** se circulan por la derecha dejando la isleta central a la izquierda.\n- En **retenciones** en autopistas y autovías hay que formar un **carril de emergencia** para los vehículos prioritarios: con dos carriles, en el centro; con tres o más, entre el carril izquierdo y su contiguo (RGC art. 32.1, desde el 1-10-2026).\n\n## Carriles especiales\n- Carril **bus**: reservado a autobuses (y taxis si lo indica la señal).\n- Carril **VAO**: vehículos con alta ocupación según la señal (normalmente 2 o más ocupantes).\n- Carril **reversible** y **adicional**: señalizados con semáforos de carril o conos; obligatorio llevar encendida la luz de cruce."
+      },
+      {
+        "titulo": "Obligaciones del conductor",
+        "texto": "# Atención y conducción\nEl conductor debe mantener en todo momento el **control del vehículo** y la atención a la conducción.\n\n- Está prohibido conducir usando el teléfono móvil con la mano, auriculares o cascos conectados a aparatos de sonido. Sostener el móvil mientras se conduce supone la pérdida de **6 puntos**.\n- Los dispositivos manos libres solo pueden usarse si no requieren manipulación con las manos.\n- Está prohibido llevar en el vehículo detectores de radar (los avisadores, basados en bases de datos, sí están permitidos).\n- Hay que llevar el **permiso de conducción** y el **permiso de circulación** (en papel o en la app miDGT) y la **tarjeta ITV** (su copia en miDGT no sirve).\n- El conductor es responsable de que los menores utilicen el **sistema de retención infantil**; cada ocupante adulto responde de llevar abrochado su cinturón (Ley de Tráfico, art. 82)."
+      }
+    ]
+  },
+  {
+    "id": "t02",
+    "titulo": "Velocidad",
+    "orden": 2,
+    "resumen": "Límites genéricos, velocidad adecuada y distancia de seguridad",
+    "secciones": [
+      {
+        "titulo": "Límites genéricos para turismos",
+        "texto": "# Vías interurbanas\n- **Autopistas y autovías**: 120 km/h.\n- **Carreteras convencionales**: 90 km/h. En las que tienen separación física de los dos sentidos, el titular de la vía puede fijar 100 km/h para turismos.\n- Velocidad **mínima**: 60 km/h en autopistas y autovías; en las demás vías, la mitad de la genérica de cada vehículo (45 km/h para un turismo en convencional) (RGC art. 49).\n\n## Otros vehículos\n- **Autobuses**: 100 km/h en autopistas y autovías, 90 km/h en convencionales.\n- **Camiones, furgonetas y automóviles con remolque**: 90 km/h en autopistas y autovías, 80 km/h en convencionales (art. 48).\n\n# Vías urbanas\n- Calles de **un solo carril por sentido**: 30 km/h.\n- Calles con **dos o más carriles por sentido**: 50 km/h.\n- Calles de **plataforma única** (calzada y acera al mismo nivel): 20 km/h.\n- **Travesías**: 50 km/h.\n- **Autopistas y autovías urbanas** (dentro de poblado): 80 km/h (art. 50).\n\nLos límites genéricos solo rigen si no hay una señal que fije otro. Desde 2022 no está permitido superar en 20 km/h el límite para adelantar en carretera convencional."
+      },
+      {
+        "titulo": "Velocidad adecuada y distancia de seguridad",
+        "texto": "# Adecuar la velocidad\nHay que reducir la velocidad ante peatones y ciclistas, pasos para peatones, curvas y cambios de rasante sin visibilidad, intersecciones, vías estrechas, calzada mojada, niebla, nieve o hielo, y siempre que la visibilidad sea reducida. No se puede circular tan despacio que se entorpezca la marcha de los demás sin causa justificada.\n\n## Usuarios vulnerables y vehículos inmovilizados\n- Al adelantar a ciclistas, peatones, patinetes, ciclomotores o animales hay que dejar al menos **1,5 m** de separación lateral y, fuera de poblado, reducir la velocidad al menos **20 km/h** respecto al límite (art. 85.4).\n- Al rebasar un vehículo **inmovilizado** (avería, accidente, servicios de urgencia o de auxilio) que ocupa el carril: al menos 1,5 m de separación y reducir 20 km/h respecto al límite (art. 88.1, desde el 1-10-2026).\n- En ciudad, hay que dejar al menos **5 m** con el ciclista que circula delante por el mismo carril (art. 153.4, desde el 1-10-2026).\n\n# Distancia de seguridad\n- Debe permitir **detenerse** sin colisionar si el de delante frena bruscamente.\n- Fuera de poblado, además, hay que dejar espacio para que el que adelanta pueda intercalarse. Los vehículos de más de 3.500 kg de MMA y los vehículos y conjuntos de vehículos de más de 10 m de longitud total deben dejar al menos **50 m** con el vehículo de delante (art. 54.2).\n- La **distancia de frenado** crece con el cuadrado de la velocidad: al doblar la velocidad se multiplica por cuatro. En calzada mojada puede duplicarse.\n- La **distancia de reacción** es la que se recorre mientras el conductor reacciona (unos 0,75 s en condiciones normales): a 90 km/h, casi 20 m antes de empezar a frenar."
+      }
+    ]
+  },
+  {
+    "id": "t03",
+    "titulo": "Prioridad de paso",
+    "orden": 3,
+    "resumen": "Intersecciones, glorietas, vehículos prioritarios y peatones",
+    "secciones": [
+      {
+        "titulo": "Intersecciones",
+        "texto": "# Sin señalizar\nEn una intersección sin señales de prioridad, se cede el paso a los vehículos que se aproximan por la **derecha**.\n\n## Excepciones a la norma de la derecha\n- Tienen prioridad los vehículos que circulan por una vía **pavimentada** frente a los que vienen de una sin pavimentar.\n- Tienen prioridad los vehículos que circulan por **raíles** (tranvías).\n- En las **glorietas**, tienen prioridad los que ya circulan por ella frente a los que van a entrar.\n- Tienen prioridad los que circulan por una **autopista o autovía** frente a los que pretenden acceder a ella (RGC art. 57.1.d).\n- En los tramos estrechos con **señal de prioridad** (R-5 / R-6), pasa primero quien tiene la prioridad; si no hay señal, pasa primero el que ha entrado antes en el tramo.\n- En los tramos estrechos de **gran pendiente** (7 % o más) tiene preferencia el que **sube**, salvo que sea él quien pueda llegar antes a un apartadero (art. 63).\n\n## Con señales\n- **Ceda el paso**: ceder sin necesidad de detenerse si no viene nadie.\n- **STOP**: detenerse siempre, con las ruedas antes de la línea de detención, y reanudar solo cuando no haya peligro."
+      },
+      {
+        "titulo": "Vehículos prioritarios y peatones",
+        "texto": "# Vehículos prioritarios\nPolicía, bomberos, protección civil y ambulancias en servicio de urgencia, cuando llevan **señales luminosas y acústicas** encendidas, tienen prioridad: hay que facilitarles el paso apartándose y, si es necesario, deteniéndose. Pueden saltarse las normas, pero siempre con precaución.\n\n- En retenciones en autopistas y autovías hay que formar el **carril de emergencia** (art. 32).\n- Si un vehículo de policía se coloca detrás y enciende una **luz roja intermitente** hacia delante, hay que detenerse a la derecha, delante de él, y permanecer dentro (art. 69).\n\n# Peatones\nLos conductores deben ceder el paso a los peatones (art. 65):\n- En los **pasos para peatones** señalizados, aceras y demás zonas peatonales.\n- Al **girar** para entrar en otra vía, a los que la cruzan aunque no haya paso señalizado.\n- Al cruzar un **arcén** por el que circulan peatones que no tienen zona peatonal.\n- A los que van a subir o han bajado de un **transporte colectivo** en una parada señalizada, cuando están entre el vehículo y la zona peatonal o refugio.\n- A las **filas escolares**, comitivas organizadas y unidades militares a pie.\n\n# Ciclistas\nLos ciclistas tienen prioridad (art. 64.2):\n- Cuando circulan por un carril bici, un paso para ciclistas o un arcén debidamente señalizados.\n- Cuando un vehículo **gira** para entrar en otra vía y hay un ciclista en sus proximidades.\n- Cuando circulan en grupo y el primero ya ha iniciado el cruce o ha entrado en la glorieta: el grupo pasa como una unidad."
+      }
+    ]
+  },
+  {
+    "id": "t04",
+    "titulo": "Maniobras",
+    "orden": 4,
+    "resumen": "Incorporación, adelantamiento, cambio de sentido, marcha atrás, parada y estacionamiento",
+    "secciones": [
+      {
+        "titulo": "Incorporación y cambios de carril",
+        "texto": "# Incorporarse a la circulación\nAntes de incorporarse hay que **cerciorarse** de que no hay peligro, **señalizarlo** con el intermitente y ceder el paso a los que circulan por la vía. En los **carriles de aceleración** se adapta la velocidad a la de la vía antes de entrar.\n\n# Cambio de carril y de dirección\n- Se advierte con antelación suficiente con el intermitente y se comprueba por los retrovisores y el ángulo muerto.\n- Todo cambio de carril respeta la **prioridad** del que circula por el carril que se quiere ocupar (RGC art. 74.2).\n- Con **tráfico denso** no se cambia de carril salvo para prepararse a girar o salir (art. 83.2).\n- Para girar a la **derecha** se ocupa el carril derecho; para girar a la **izquierda** en vías de doble sentido, se ciñe a la izquierda del sentido propio sin invadir el contrario.\n- No se debe cambiar de carril en una intersección ni cruzando una línea continua."
+      },
+      {
+        "titulo": "Adelantamiento",
+        "texto": "# Reglas básicas\nSe adelanta por la **izquierda**. Por la derecha solo cuando el vehículo de delante indica claramente que va a girar a la izquierda o a parar en ese lado, a los tranvías que circulan por la zona central, o en poblado en calzadas con al menos dos carriles en el mismo sentido (RGC art. 82).\n\n## Prohibido adelantar\n- En curvas y cambios de rasante de **visibilidad reducida** y, en general, donde no haya visibilidad suficiente.\n- En **pasos para peatones**, intersecciones con vías ciclistas y pasos a nivel, y en sus proximidades.\n- En **intersecciones** y sus proximidades, salvo en glorietas, cuando el adelantamiento por la derecha esté permitido, cuando la calzada tenga prioridad y haya señal expresa, o si se adelanta a vehículos de dos ruedas (art. 87).\n- En túneles y pasos inferiores con **un solo carril por sentido**.\n- Cuando hay **línea continua** o un vehículo ya está adelantando.\n\n## Ciclistas y peatones\nAl adelantar a ciclistas, ciclomotores, patinetes (VMP), peatones, animales o vehículos de tracción animal hay que dejar siempre una **separación lateral mínima de 1,5 m**; fuera de poblado, además, reducir la velocidad al menos **20 km/h** respecto al límite. Un **grupo de ciclistas** es una sola unidad (art. 85.4). En vías con más de un carril por sentido es obligatorio el cambio completo de carril. Para ello se puede ocupar parte o la totalidad del carril contrario, incluso con línea continua, si hay visibilidad y no hay peligro (art. 88.2)."
+      },
+      {
+        "titulo": "Cambio de sentido y marcha atrás",
+        "texto": "# Cambio de sentido\nSe hace en un lugar con visibilidad y espacio suficientes, señalizándolo. Está **prohibido** donde no se pueda comprobar que es seguro, en pasos a nivel, túneles y pasos inferiores, en **autopistas y autovías** (salvo en los lugares habilitados) y en todo tramo donde esté prohibido adelantar, salvo autorización expresa (RGC art. 79).\n\n# Marcha atrás\n- Prohibida salvo cuando no sea posible avanzar ni cambiar de dirección o sentido, y como **complemento** de otra maniobra (parar, estacionar, incorporarse), recorriendo el **mínimo espacio**: nunca más de **15 m** ni invadiendo un cruce (art. 80).\n- Prohibida en autopistas y autovías.\n- Se hace despacio, cerciorándose de que no hay peligro, y si es necesario con ayuda de alguien."
+      },
+      {
+        "titulo": "Parada y estacionamiento",
+        "texto": "# Diferencia\n- **Parada**: inmovilización durante un tiempo **inferior a dos minutos** sin que el conductor pueda abandonar el vehículo.\n- **Estacionamiento**: inmovilización que no sea parada ni esté motivada por la circulación.\n\n# Dónde no se puede\nEstá prohibido **parar** (y, por tanto, también estacionar) (RGC art. 94.1):\n- En curvas y cambios de rasante de visibilidad reducida y sus proximidades, y en túneles y pasos inferiores.\n- En pasos a nivel, pasos para ciclistas y pasos para peatones.\n- En carriles reservados (bus, carril bici) y en las paradas del transporte público.\n- En intersecciones y sus proximidades si se dificulta el giro a otros vehículos o, en vías interurbanas, si se genera peligro por falta de visibilidad.\n- Sobre los raíles del tranvía o tan cerca que se entorpezca su circulación.\n- En **autopistas y autovías**, salvo en las zonas habilitadas.\n- Donde se impida ver las señales.\n\nAdemás está prohibido **estacionar** sobre las **aceras** y zonas peatonales, en doble fila, delante de vados, en zonas de carga y descarga, en plazas reservadas (personas con movilidad reducida), en zonas de estacionamiento limitado sin tique o pasado el tiempo (art. 94.2) y, en vías de doble sentido, en sentido contrario al de la marcha.\n\nAl estacionar en pendiente hay que dejar el freno de mano y una **marcha engranada** (primera en subida, marcha atrás en bajada). Apoyando una rueda en el bordillo, las ruedas se giran hacia el **centro de la calzada en subida** y hacia el **bordillo en bajada**. Los calzos solo son obligatorios en vehículos de más de 3.500 kg, autobuses y conjuntos de vehículos (art. 92.3)."
+      }
+    ]
+  },
+  {
+    "id": "t05",
+    "titulo": "Señales de agentes, semáforos y señales de los vehículos",
+    "orden": 5,
+    "resumen": "Orden de prioridad de las señales, órdenes de los agentes y semáforos",
+    "secciones": [
+      {
+        "titulo": "Orden de prioridad",
+        "texto": "# De mayor a menor prioridad\n1. Señales y órdenes de los **agentes**.\n2. Señalización circunstancial que modifica el régimen normal (conos, paneles de obras) y de balizamiento.\n3. **Semáforos**.\n4. Señales **verticales**.\n5. **Marcas viales**.\n\nSi dos señales contradictorias tienen la misma prioridad, prevalece la **más restrictiva** (RGC art. 133)."
+      },
+      {
+        "titulo": "Órdenes de los agentes",
+        "texto": "# Señales con los brazos\n- **Brazo levantado verticalmente**: todos los usuarios que se acerquen al agente deben **detenerse**, salvo los que no puedan hacerlo con seguridad.\n- **Brazos extendidos horizontalmente**: deben detenerse los que vienen de **frente y por detrás** del agente; los de los lados pueden pasar.\n- **Balanceo de una luz roja o amarilla**: deben detenerse los usuarios a los que se dirige la luz.\n- **Brazo extendido moviéndolo de arriba abajo**: indica que se reduzca la velocidad.\n- Silbato: toques cortos para parar, uno largo para reanudar.\n\n# Señales desde un vehículo\n- **Luz roja intermitente hacia delante**: detenerse a la derecha, **delante** del vehículo policial, y permanecer dentro (art. 69).\n- **Brazo extendido hacia abajo, inclinado y fijo**: detenerse a la derecha.\n- **Bandera roja**: calzada cerrada; **verde**: calzada abierta; **amarilla**: extremar la atención.\n\nLas señales de los agentes se regulan en el RGC art. 141 y su anexo I."
+      },
+      {
+        "titulo": "Semáforos",
+        "texto": "# Luces\n- **Rojo**: prohibido pasar; detenerse antes de la línea de detención.\n- **Rojo intermitente** (o dos rojas alternativas): prohibido pasar; se usa en pasos a nivel, puentes móviles y salidas de vehículos de bomberos.\n- **Ámbar fijo**: detenerse como ante el rojo, salvo que no se pueda hacer con seguridad.\n- **Ámbar intermitente**: pasar extremando la precaución y, en su caso, cediendo el paso.\n- **Verde**: permite pasar, salvo que al otro lado no haya espacio y se vaya a bloquear la intersección.\n- **Flecha verde** sobre fondo negro: se puede pasar en la dirección indicada, con precaución, aunque otra luz del mismo semáforo o de uno contiguo esté en rojo.\n- **Flecha negra** sobre luz roja o ámbar: limita el significado de esa luz al movimiento indicado por la flecha.\n\n# Semáforos de carril\n**Aspa roja**: carril prohibido. **Flecha verde** hacia abajo: carril abierto. **Flecha blanca o ámbar oblicua** hacia abajo: pasar al carril que indica, porque el actual se va a cerrar.\n\n# Semáforos para peatones, ciclos, tranvías y autobuses\nLa silueta de peatón o bicicleta en rojo o verde indica a esos usuarios si pueden cruzar. El verde intermitente avisa de que va a cambiar. Los semáforos de **franjas blancas** sobre fondo negro son para tranvías y autobuses de línea: franja horizontal, parar; vertical, paso de frente; oblicua, giro.\n\nLos semáforos se regulan en el RGC art. 143 y su anexo I."
+      },
+      {
+        "titulo": "Señales de los vehículos",
+        "texto": "# Señales ópticas y acústicas\n- **Intermitentes**: obligatorios para advertir cualquier maniobra (giro, cambio de carril, incorporación, salida de glorieta).\n- **Luces de emergencia** (los cuatro intermitentes): en avería, accidente o retenciones imprevistas; también al advertir de un peligro.\n- **Luz de frenado**: se enciende al frenar; también avisa el uso del freno a los de detrás.\n- **Bocina**: solo para evitar un accidente, fuera de poblado para advertir de un adelantamiento, o en circunstancias excepcionales. Prohibido su uso inmotivado.\n- **Ráfagas**: pueden sustituir a las señales acústicas (advertir de un adelantamiento o de un peligro), también en poblado, a intervalos cortos y sin deslumbrar (RGC art. 109.3).\n\n# Baliza V-16\nDesde el 1 de enero de 2026 la luz de emergencia **V-16 conectada** es el único dispositivo de preseñalización de peligro válido para señalizar un vehículo inmovilizado en la vía (art. 130.4), en sustitución de los triángulos. Se coloca **desde dentro**, en la parte más alta del vehículo, sin bajar de él. No llama al 112: envía la ubicación del vehículo a la plataforma **DGT 3.0**."
+      }
+    ]
+  },
+  {
+    "id": "t06",
+    "titulo": "Señales verticales y marcas viales",
+    "orden": 6,
+    "resumen": "Formas y colores de las señales, y qué significan las líneas pintadas",
+    "secciones": [
+      {
+        "titulo": "Formas y colores",
+        "texto": "# Reconocer una señal por su forma\n- **Triángulo con borde rojo** (vértice arriba): peligro (P). Se colocan con antelación suficiente al peligro; un panel complementario puede indicar la distancia (RGC art. 144).\n- **Triángulo invertido**: ceda el paso (R-1). **Octógono rojo**: STOP (R-2).\n- **Círculo con borde rojo**: prohibición o restricción. Fondo blanco con franja negra inclinada: fin de la prohibición.\n- **Círculo azul**: obligación.\n- **Cuadrado o rectángulo azul**: indicación general (S), por ejemplo autopista, paso para peatones, vía de servicio.\n- **Carteles de orientación**: azules en autopistas y autovías, blancos en carreteras convencionales, amarillos en obras.\n- Señales de **obras**: fondo amarillo.\n\n# Validez\nLa señal rige desde el lugar donde está, salvo que un panel complementario indique la distancia a la que empieza a regir; si está junto a la señal con el nombre de un poblado, rige en todo él (art. 145). Un panel con flecha indica el tramo o la dirección a que se aplica."
+      },
+      {
+        "titulo": "Marcas viales",
+        "texto": "# Líneas longitudinales\n- **Continua**: no se puede rebasar ni circular sobre ella. Separa sentidos o carriles con prohibición de cambio.\n- **Discontinua**: se puede rebasar si hay seguridad.\n- **Continua junto a discontinua**: obliga al conductor que tiene la continua **más cerca**; el que tiene la discontinua puede rebasarla.\n- **Línea de borde de calzada**: marca el límite con el arcén; que sea continua o discontinua no cambia el uso del arcén.\n- **Amarilla en zigzag** (M-7.9): prohibido estacionar (zona reservada, como una parada de autobús o de carga y descarga).\n- **Amarilla continua** en el bordillo o junto a él: prohibición de parada (M-7.8); prohíbe parar y estacionar. **Discontinua amarilla**: prohibido estacionar.\n\n# Líneas transversales\n- **Línea de detención** (continua): ante un STOP o semáforo, hay que parar antes de ella.\n- **Línea de ceda el paso** (discontinua) y triángulos pintados.\n- **Paso para peatones** (cebra) y **paso para ciclistas** (cuadros).\n\n# Otras marcas\n- **Cebreado**: zona excluida de la circulación; no se puede entrar, salvo los obligados a circular por el arcén.\n- **Flechas de selección de carril**: obligan a seguir la dirección indicada en la intersección.\n- **Flecha de fin de carril**: hay que abandonar el carril.\n- **Inscripción STOP o CEDA** en el pavimento: refuerzan la señal vertical.\n\nLas marcas viales se regulan en el RGC art. 147 y en el Catálogo de marcas viales."
+      }
+    ]
+  },
+  {
+    "id": "t07",
+    "titulo": "Alumbrado y condiciones meteorológicas",
+    "orden": 7,
+    "resumen": "Cuándo usar cada luz y cómo conducir con lluvia, niebla, nieve o viento",
+    "secciones": [
+      {
+        "titulo": "Uso del alumbrado",
+        "texto": "# Cuándo es obligatorio llevar luces\nEntre la **puesta y la salida del sol**, y de día en **túneles**, pasos inferiores, carriles reversibles o adicionales y siempre que haya poca visibilidad. Las motocicletas llevan siempre la luz de cruce.\n\n# Qué luz usar\n- **Luz de posición**: obligatoria siempre que se circula de noche, por túneles y pasos inferiores o con poca visibilidad (RGC art. 99).\n- **Luz de cruce** (corta): en poblado, en vías bien iluminadas, en túneles iluminados y siempre que la de carretera pueda deslumbrar (art. 101).\n- **Luz de carretera** (larga): fuera de poblado en vías sin iluminar, sustituyéndola por la de cruce para no deslumbrar a los que vienen de frente o van delante (art. 102.1).\n- **Antiniebla delantera**: con niebla, lluvia intensa, nevada o nubes de polvo o humo, y en vías estrechas con muchas curvas señalizadas; puede usarse sola o con la de cruce, e incluso con la de carretera (art. 106.2).\n- **Antiniebla trasera**: solo con niebla espesa, lluvia muy intensa o nevada fuerte; en otros casos deslumbra a los de atrás.\n- Si se queda deslumbrado, hay que reducir la velocidad o detenerse sin frenar bruscamente."
+      },
+      {
+        "titulo": "Condiciones adversas",
+        "texto": "# Lluvia\nLa calzada mojada reduce la adherencia, sobre todo en los **primeros minutos** (polvo y aceite). Con mucha agua puede producirse **aquaplaning**: los neumáticos pierden el contacto; hay que levantar el pie del acelerador sin frenar ni girar bruscamente. Hay que aumentar la distancia de seguridad.\n\n# Niebla\nReducir la velocidad según la visibilidad, usar la luz de cruce y las antiniebla, y guiarse por las líneas de la derecha. La de carretera está permitida (art. 106.2), pero es **desaconsejable**: se refleja en la niebla y empeora la visibilidad.\n\n# Nieve y hielo\nUsar cadenas o neumáticos de invierno cuando se exija; conducir con marchas largas y suavidad, sin acelerones ni frenazos; las placas de hielo aparecen en sombras, puentes y zonas húmedas. Si el vehículo patina, girar el volante hacia donde se desplaza la parte trasera.\n\n- En autopistas y autovías con nieve en la calzada está **prohibido adelantar** y hay que circular por el **carril derecho** (o también su contiguo si hay tres o más carriles), dejando libres los demás para emergencias y quitanieves (RGC art. 32.2, desde el 1-10-2026).\n\n# Viento\nEl viento lateral afecta más a vehículos altos, motos y remolques, y sorprende al salir de túneles o adelantar camiones: sujetar el volante con firmeza y reducir la velocidad."
+      }
+    ]
+  },
+  {
+    "id": "t08",
+    "titulo": "Documentación, permiso de conducir y puntos",
+    "orden": 8,
+    "resumen": "Qué autoriza el permiso B, validez, puntos, seguro e ITV",
+    "secciones": [
+      {
+        "titulo": "El permiso B",
+        "texto": "# Qué permite conducir\n- Automóviles de hasta **3.500 kg de MMA** y hasta **9 plazas** incluido el conductor.\n- Con remolque de hasta **750 kg**, o mayor si el conjunto no supera 3.500 kg. Con la autorización **B96** se permiten conjuntos de hasta 4.250 kg.\n- **Ciclomotores**, triciclos y cuatriciclos ligeros.\n- Con **3 años de antigüedad** del permiso B: motocicletas de hasta 125 cc y 11 kW (A1) dentro de España.\n\n# Edad y validez\nSe obtiene a los **18 años**. Es válido **10 años** hasta los 65 y **5 años** a partir de esa edad. Hay que renovarlo con un reconocimiento médico.\n\n# Conductor novel\nDurante el **primer año** hay que llevar la placa **L** (señal V-13) en la parte trasera izquierda (RGV anexo XI). Los noveles (menos de 2 años) tienen una tasa de alcohol más baja."
+      },
+      {
+        "titulo": "Permiso por puntos",
+        "texto": "# Saldo de puntos\n- Un conductor nuevo empieza con **8 puntos**; a los **2 años** sin perder puntos pasa a 12, y puede llegar a **15** como máximo.\n- Las infracciones graves y muy graves restan de 2 a 6 puntos; con **0 puntos** se pierde el permiso.\n- Se recuperan puntos por el paso del tiempo sin sanciones (2 años para recuperar el saldo inicial) o con un **curso de recuperación parcial** (hasta 6 puntos, una vez cada 2 años).\n- Un **curso de conducción segura y eficiente** suma 2 puntos, hasta un máximo de 15.\n\n# Infracciones que más puntos restan (6)\nConducir con tasa de alcohol superior a 0,50 mg/l en aire (o 0,30 en noveles y profesionales), bajo los efectos de drogas, negarse a las pruebas, conducir de forma temeraria, superar el límite de velocidad en más de 30 km/h en vías limitadas a 50 km/h o menos, o en más de 60 km/h en las de 60 km/h o más (Ley de Tráfico, anexo IV), usar el móvil con la mano o llevar un **inhibidor** de radar. Llevar un **detector** de radar resta 3 puntos."
+      },
+      {
+        "titulo": "Seguro e ITV",
+        "texto": "# Seguro obligatorio\nTodo vehículo a motor debe tener un seguro de responsabilidad civil en vigor para circular y estar aparcado en la vía pública. Circular sin seguro supone una multa de **601 a 3.005 €** y el depósito o precinto del vehículo durante **1 mes** (3 meses si se reincide) (RDL 8/2004, art. 3).\n\n# Inspección técnica (ITV)\nLos turismos pasan la primera inspección a los **4 años** de su matriculación, después cada **2 años** hasta los 10 años, y a partir de ahí **cada año**. Circular sin ITV en vigor o con resultado desfavorable (más allá del trayecto al taller) está prohibido.\n\n# Permiso de circulación\nIdentifica al vehículo y a su titular. Hay que comunicar los cambios de domicilio y de titularidad a la DGT."
+      }
+    ]
+  },
+  {
+    "id": "t09",
+    "titulo": "Alcohol, drogas, fatiga y medicamentos",
+    "orden": 9,
+    "resumen": "Tasas de alcohol, efectos, sanciones y cómo evitar la fatiga",
+    "secciones": [
+      {
+        "titulo": "Alcohol",
+        "texto": "# Tasas máximas\n- Conductores en general: **0,5 g/l** en sangre, **0,25 mg/l** en aire espirado.\n- Conductores **noveles** (menos de 2 años de permiso) y **profesionales**: **0,3 g/l** en sangre, **0,15 mg/l** en aire.\n- Es **delito** conducir con más de **1,2 g/l** en sangre (0,60 mg/l en aire) o negarse a las pruebas.\n\n# Efectos\nEl alcohol produce euforia y exceso de confianza, aumenta el **tiempo de reacción**, reduce el campo visual (visión en túnel), empeora la coordinación y el cálculo de distancias y velocidades. Sus efectos se notan ya con tasas bajas.\n\n# Eliminación\nEl hígado elimina el alcohol lentamente, en torno a **0,1-0,15 g/l por hora**. Ni el café, ni la ducha, ni hacer ejercicio aceleran el proceso. Por la mañana todavía puede quedar alcohol en sangre. La tasa sube más con el estómago vacío y en personas de poco peso."
+      },
+      {
+        "titulo": "Drogas, medicamentos y fatiga",
+        "texto": "# Drogas\nEstá prohibido conducir con presencia de drogas en el organismo, salvo sustancias tomadas con receta médica y con fin terapéutico, siempre que se esté en condiciones de conducir. La prueba es de saliva. Sanción: **1.000 € y 6 puntos**; conducir bajo su influencia es delito.\n\n# Medicamentos\nMuchos medicamentos (ansiolíticos, antihistamínicos, analgésicos opiáceos) reducen la atención y provocan somnolencia. Los envases llevan un **pictograma** de un coche en un triángulo rojo cuando afectan a la conducción. Hay que consultar al médico o farmacéutico.\n\n# Fatiga y sueño\nEl sueño provoca microsueños de varios segundos. Señales de fatiga: parpadeo frecuente, bostezos, dificultad para mantener el carril, sensación de pesadez. Conviene **descansar cada dos horas o 200 km**, dormir bien antes de un viaje, evitar comidas copiosas y las horas de más sueño (madrugada y primera hora de la tarde)."
+      }
+    ]
+  },
+  {
+    "id": "t10",
+    "titulo": "Seguridad activa y pasiva, y mantenimiento del vehículo",
+    "orden": 10,
+    "resumen": "Cinturón, sistemas de retención infantil, airbag, neumáticos y revisiones",
+    "secciones": [
+      {
+        "titulo": "Seguridad pasiva",
+        "texto": "# Cinturón de seguridad\nObligatorio en **todas las plazas** y en todo tipo de vía, también en poblado y en trayectos cortos. Debe ir bien ajustado, sin holguras ni retorcido, con la banda diagonal sobre el hombro y la horizontal sobre la cadera. El **airbag** complementa al cinturón y no lo sustituye: sin cinturón, el airbag puede causar lesiones.\n\n- Desde el 1-10-2026 ya no están exentos en poblado los taxistas, los repartidores ni los profesores de autoescuela. Solo quedan exentos los conductores al hacer marcha atrás o estacionar, quienes tengan un certificado médico de exención y, en poblado, los ocupantes de vehículos en servicio de urgencia (RGC art. 119).\n\n# Niños\nLos menores de edad de estatura **igual o inferior a 135 cm** deben viajar en un **sistema de retención infantil** homologado adaptado a su peso y talla, en los **asientos traseros**. Solo pueden ir delante si el vehículo no tiene asientos traseros, si todos los traseros están ocupados por otros menores con sistema de retención o si no se pueden instalar. Nunca una silla a contramarcha delante con el airbag activado (art. 117).\n\n# Reposacabezas\nSu parte superior debe quedar a la altura de la parte superior de la cabeza, lo más cerca posible de ella, para evitar el latigazo cervical."
+      },
+      {
+        "titulo": "Seguridad activa y mantenimiento",
+        "texto": "# Sistemas\n- **ABS**: evita que las ruedas se bloqueen al frenar y permite seguir dirigiendo el vehículo.\n- **ESP** (control de estabilidad): frena ruedas de forma selectiva para evitar derrapes.\n- **Frenada de emergencia automática**, **control de crucero adaptativo** y **mantenimiento de carril** son ayudas; el conductor sigue siendo responsable.\n\n# Neumáticos\nLa profundidad mínima legal del dibujo es **1,6 mm**. La presión se comprueba en frío al menos una vez al mes; una presión baja aumenta el consumo y el riesgo de reventón. Hay que revisar el desgaste irregular (indica problemas de alineación o suspensión).\n\n# Otros elementos\nRevisar niveles (aceite, refrigerante, líquido de frenos, limpiaparabrisas), luces, escobillas, frenos y amortiguadores. Llevar **chaleco reflectante** (usarlo al bajar del vehículo en vía interurbana), baliza **V-16** y rueda de repuesto o kit de reparación."
+      }
+    ]
+  },
+  {
+    "id": "t11",
+    "titulo": "Accidentes y primeros auxilios",
+    "orden": 11,
+    "resumen": "Cómo actuar ante un accidente: proteger, avisar y socorrer",
+    "secciones": [
+      {
+        "titulo": "Conducta PAS",
+        "texto": "# Proteger\nDetener el vehículo en lugar seguro y encender las luces de emergencia. Señalizar con la baliza **V-16**, colocándola **desde dentro** en el techo. Ponerse el chaleco antes de bajar y salir por el lado **contrario al tráfico**, sin quedarse en la calzada ni en el arcén. Si no hay un lugar seguro fuera de la vía, permanecer dentro con el **cinturón abrochado** (RGC art. 130.3). En autopista, no cruzarla; ponerse tras la barrera.\n\n# Avisar\nLlamar al **112** indicando lugar exacto, número de heridos y su estado, y riesgos (fuego, combustible). No colgar hasta que lo indiquen. La V-16 no avisa al 112: solo envía la ubicación a la DGT.\n\n# Socorrer\nAtender primero a los heridos más graves que no griten (inconscientes, que no respiran). No mover a los heridos salvo riesgo inminente (fuego). No dar de beber ni de comer. Mantenerlos abrigados y tranquilos."
+      },
+      {
+        "titulo": "Primeros auxilios básicos",
+        "texto": "# Heridos\n- **Inconsciente que respira**: colocarlo en **posición lateral de seguridad** para que no se ahogue.\n- **No respira**: iniciar la **reanimación cardiopulmonar**: 30 compresiones en el centro del pecho (100-120 por minuto) y 2 insuflaciones, sin parar hasta que lleguen los servicios.\n- **Hemorragia**: comprimir directamente sobre la herida con un paño limpio y elevar el miembro si es posible; el torniquete solo como último recurso.\n- **Motoristas**: **no quitar el casco** salvo que sea imprescindible para reanimar, y entonces entre dos personas.\n- **Quemaduras**: enfriar con agua, no aplicar pomadas ni reventar ampollas.\n- **Fracturas**: inmovilizar sin intentar recolocar.\n\n# Obligaciones\nTodo usuario de la vía implicado en un accidente o que lo presencie debe auxiliar a las víctimas o pedir ayuda, y colaborar con la autoridad. Si solo hay daños materiales se rellena el parte amistoso en un lugar seguro fuera de la vía: está prohibido hacerlo en la calzada o el arcén (RGC art. 130.5)."
+      }
+    ]
+  },
+  {
+    "id": "t12",
+    "titulo": "Conducción eficiente, autopistas y otros usuarios",
+    "orden": 12,
+    "resumen": "Ahorrar combustible, circular por autopista y convivir con peatones, ciclistas y patinetes",
+    "secciones": [
+      {
+        "titulo": "Conducción eficiente",
+        "texto": "# Técnicas\n- Arrancar el motor sin pisar el acelerador e iniciar la marcha sin esperar a que se caliente.\n- Usar la **primera** solo para arrancar y pasar pronto a marchas largas: en gasolina a unas 2.000-2.500 rpm y en diésel a 1.500-2.000 rpm.\n- Mantener una velocidad **uniforme**, anticiparse al tráfico y aprovechar las **inercias** (levantar el pie en lugar de frenar).\n- En paradas de más de un minuto, apagar el motor.\n- Revisar la **presión de los neumáticos**, quitar bacas y pesos innecesarios y usar el aire acondicionado con moderación (consume hasta un 10-20 % más).\n\nUna conducción eficiente reduce consumo y emisiones entre un 10 y un 15 %, y además es más segura."
+      },
+      {
+        "titulo": "Autopistas y autovías",
+        "texto": "# Quién no puede circular\n- **Peatones**: no pueden circular ni hacer autostop (RGC art. 125.1).\n- Vehículos de **tracción animal**, **bicicletas**, **ciclomotores** y vehículos para personas de **movilidad reducida** (art. 38.1). Los ciclistas mayores de 14 años pueden circular por el **arcén de autovías** salvo prohibición expresa.\n- **Patinetes** y demás vehículos de movilidad personal (art. 38.4).\n- Vehículos **especiales**: solo con autorización o si pueden superar 60 km/h en llano (art. 38.3).\n\n# Normas\n- Prohibido circular a menos de **60 km/h** (art. 49.1).\n- Prohibido **parar y estacionar**, salvo en zonas habilitadas o por emergencia en el arcén, señalizando.\n- Prohibidos la **marcha atrás** y el **cambio de sentido**.\n- Se circula por el carril derecho; los demás son para adelantar.\n- En retenciones hay que formar el **carril de emergencia**: con dos carriles, en el centro; con tres o más, entre el izquierdo y su contiguo (art. 32.1, desde el 1-10-2026).\n- Hay que usar las **vías de servicio** y los carriles de aceleración y deceleración.\n- En caso de avería, salir del vehículo por el lado contrario al tráfico, con el chaleco, y colocarse tras la barrera."
+      },
+      {
+        "titulo": "Peatones, ciclistas y patinetes",
+        "texto": "# Peatones\nDeben circular por la acera y cruzar por los pasos señalizados. Fuera de poblado, por la **izquierda** de la calzada o el arcén. En vías interurbanas, de noche o con poca visibilidad, deben llevar un **elemento luminoso o reflectante** visible a 150 m (RGC art. 123.1). En autopistas y autovías no pueden circular ni hacer autostop (art. 125.1).\n\n# Ciclistas\nPueden circular en **columna de a dos**, pero en **hilera** en tramos sin visibilidad, de noche o con poca visibilidad (art. 36.2). Deben llevar casco fuera de poblado (los menores de 16 siempre), luces y reflectantes de noche.\n\n- Al adelantarlos hay que dejar al menos **1,5 m** y, fuera de poblado, reducir la velocidad al menos **20 km/h** respecto al límite; si hay más de un carril por sentido, cambiar completamente de carril. Un grupo de ciclistas es una sola unidad (art. 85.4).\n- En ciudad hay que dejar al menos **5 m** detrás de un ciclista que circula por el mismo carril (art. 153.4, desde el 1-10-2026).\n- No se les puede acosar.\n\n# Patinetes (VMP)\nSon vehículos: no pueden circular por aceras, travesías, autopistas ni autovías, ni por vías interurbanas o túneles urbanos salvo por vías ciclistas (art. 38.4). Velocidad máxima **25 km/h**. Desde el 1-10-2026, **casco** obligatorio (art. 118.3) y edad mínima de **15 años** (art. 155.3). Solo un ocupante, sin auriculares ni móvil, y con tasa de alcohol como los demás conductores. Deben contar con certificado de circulación."
+      }
+    ]
+  }
+]

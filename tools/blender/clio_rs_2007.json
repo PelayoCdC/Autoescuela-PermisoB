@@ -1,0 +1,24 @@
+{
+  "_comment": "Configuración de prepare_car.py para 'Renault_clio_rs_2007_3ds (1)' de Fister (Sketchfab, CC-BY-4.0). Uso: blender --background --python tools/blender/prepare_car.py -- config=tools/blender/clio_rs_2007.json",
+  "mode": "export",
+  "input": "D:\\Descargas\\renault_clio_rs_2007_3ds_1\\scene.gltf",
+  "output": "F:\\IntelliJIDEA Workspace\\Autoescuela\\assets\\models\\car\\car.glb",
+  "front_axis": "-Y",
+  "target_length": 3.99,
+  "wheel_parts": ["Object_12", "Object_13", "Object_3"],
+  "names": { "steering_wheel": null, "gear_lever": null },
+  "extract": [
+    { "name": "steering_wheel", "from": "Object_19", "region": [0.10, -0.42, 0.70, 0.58, -0.29, 1.16] },
+    { "name": "gear_lever", "from": "Object_19", "region": [-0.07, -0.31, 0.58, 0.07, -0.16, 0.80] }
+  ],
+  "steering_axis": [0.0, 0.98, 0.17],
+  "eye": [0.37, 0.80, -0.30],
+  "mirror_split": {
+    "material": "Miroir",
+    "center": [-0.25, -0.70, 1.15, 0.25, -0.20, 1.40],
+    "left": [0.60, -0.70, 0.85, 1.10, -0.20, 1.20],
+    "right": [-1.10, -0.70, 0.85, -0.60, -0.20, 1.20]
+  },
+  "glass_materials": { "Vitre": 0.35, "Vitre_noir": 0.3, "Phare_vitre": 0.5 },
+  "render": true
+}

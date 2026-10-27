@@ -1,0 +1,29 @@
+.gradle/
+build/
+out/
+local.properties
+.idea/
+*.iml
+android/libs/
+android/.cxx/
+captures/
+
+# datos locales del usuario (guardados, cache de audio, bancos importados)
+assets/save/
+assets/cache/
+assets/import/
+
+# salidas temporales del script de Blender
+tools/blender/preview_*.png
+tools/blender/prepare_car_report.txt
+tools/blender/region_vertices.txt
+
+# sesiones de Claude Code y artefactos locales
+.claude/
+*.apk
+
+# bancos de preguntas de terceros (no redistribuibles)
+assets/data/preguntas_sede_dgt.json
+assets/data/preguntas_todotest.json
+assets/theory/dgt/
+assets/theory/todotest/

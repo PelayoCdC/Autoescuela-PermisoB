@@ -1,0 +1,102 @@
+{
+  "id": "l2_start_moving",
+  "name": "Arrancar el motor y salir",
+  "description": "Arranca el motor con seguridad, mete primera y haz que el coche se mueva soltando el embrague hasta el punto de fricción. Después, para.",
+  "maneuver": "TUTORIAL",
+  "category": "lesson",
+  "order": 52,
+  "startPose": { "x": -1.75, "y": 0.9, "z": 0, "yawDeg": 0 },
+  "modules": [
+    { "type": "road", "x": 0, "z": 80, "length": 240, "width": 7 },
+    { "type": "sidewalk", "x": -4.5, "z": 80, "length": 240, "width": 2 },
+    { "type": "sidewalk", "x": 4.5, "z": 80, "length": 240, "width": 2 }
+  ],
+  "curbs": [
+    { "name": "right", "points": [[-3.5, -40], [-3.5, 200]] },
+    { "name": "left", "points": [[3.5, -40], [3.5, 200]] }
+  ],
+  "markings": [ { "kind": "LANE", "name": "center", "points": [[0, -40], [0, 200]], "width": 0.12 } ],
+  "zones": [],
+  "params": { "engineOff": true, "timeLimitSec": 100000 },
+  "lesson": {
+    "summary": [
+      "Antes de arrancar el motor: punto muerto, freno de mano puesto y embrague pisado.",
+      "Para salir: embrague a fondo, primera, quitar el freno de mano y soltar el embrague despacio hasta el punto de fricción.",
+      "En el punto de fricción un poco de gas ayuda a que el motor no se cale; cuando el coche se mueve, se suelta el embrague del todo.",
+      "Para detenerte: pisa el embrague antes de que el coche se pare y frena de forma progresiva.",
+      "Al terminar: freno de mano y punto muerto."
+    ],
+    "steps": [
+      {
+        "title": "Antes de arrancar",
+        "text": "El motor está apagado. Antes de girar la llave, comprueba siempre tres cosas: la palanca en punto muerto, el freno de mano puesto y el embrague pisado. Así, aunque hubiera una marcha metida, el coche no daría un salto.",
+        "ack": true,
+        "highlight": ["gear", "handbrake", "clutch"]
+      },
+      {
+        "title": "Pisa el embrague",
+        "text": "Pisa el embrague a fondo con {CLUTCH} y mantenlo pisado durante los siguientes pasos.",
+        "goals": [ { "type": "clutch", "min": 0.95 } ],
+        "hold": 0.5,
+        "highlight": ["clutch"]
+      },
+      {
+        "title": "Gira la llave",
+        "text": "Con el embrague pisado, gira la llave con {IGNITION}. El motor de arranque hace girar el motor y en un segundo queda funcionando al ralentí, a unas 800 rpm.",
+        "goals": [ { "type": "engine", "value": 1 }, { "type": "clutch", "min": 0.9 } ],
+        "hold": 0.5,
+        "highlight": ["tacho", "clutch"],
+        "hint": "Mantén {CLUTCH} y pulsa {IGNITION} una vez."
+      },
+      {
+        "title": "Mete primera",
+        "text": "Sin soltar el embrague, mete primera con {GEAR_1}. La primera es la marcha con más fuerza: sirve para empezar a moverse. Las marchas solo entran con el embrague pisado a fondo.",
+        "goals": [ { "type": "gear", "value": 1 } ],
+        "hold": 0.3,
+        "highlight": ["gear", "clutch"]
+      },
+      {
+        "title": "Quita el freno de mano",
+        "text": "Sigue con el embrague pisado y quita el freno de mano ({HANDBRAKE}). El coche no se mueve: con el embrague pisado, el motor no llega a las ruedas.",
+        "goals": [ { "type": "handbrake", "value": 0 }, { "type": "clutch", "min": 0.9 } ],
+        "hold": 0.3,
+        "highlight": ["handbrake"]
+      },
+      {
+        "title": "Busca el punto de fricción",
+        "text": "Ahora deja de pisar {CLUTCH} y mantén {CLUTCH_HALF}: el embrague sube despacio y se queda en el punto de fricción. El motor baja un poco de vueltas y el coche empieza a avanzar muy despacio sin tocar el gas: en un diésel, el motor añade solo el gasóleo justo para no bajar del ralentí. ¡Ya se mueve!",
+        "goals": [ { "type": "clutch", "min": 0.35, "max": 0.7 }, { "type": "moving" } ],
+        "hold": 0.6,
+        "highlight": ["clutch", "tacho"],
+        "hint": "Suelta {CLUTCH} y mantén {CLUTCH_HALF}. Si el coche no avanza, da un toque suave de gas con {THROTTLE}."
+      },
+      {
+        "title": "Un poco de gas y suelta el embrague",
+        "text": "Mientras mantienes el medio embrague, acelera suavemente con {THROTTLE}. Cuando el coche avance con decisión, suelta {CLUTCH_HALF}: el embrague sube del todo y ya circulas en primera. Avanza 20 metros.",
+        "goals": [ { "type": "distance", "meters": 20 }, { "type": "clutch", "max": 0.05 } ],
+        "hold": 0.2,
+        "highlight": ["throttle", "clutch"],
+        "hint": "Si se cala, no pasa nada: embrague, punto muerto, arranca otra vez con {IGNITION} y repite con más suavidad."
+      },
+      {
+        "title": "Para el coche",
+        "text": "Para detenerte: suelta el gas, pisa el embrague a fondo ({CLUTCH}) y frena suavemente ({BRAKE}) hasta parar. Si frenas hasta pararte sin pisar el embrague, el motor se cala.",
+        "goals": [ { "type": "stopped" }, { "type": "clutch", "min": 0.9 } ],
+        "hold": 0.6,
+        "highlight": ["clutch", "brake"]
+      },
+      {
+        "title": "Deja el coche asegurado",
+        "text": "Con el coche parado, pon el freno de mano ({HANDBRAKE}) y la palanca en punto muerto ({GEAR_N}). Después ya puedes soltar los pedales.",
+        "goals": [ { "type": "handbrake", "value": 1 }, { "type": "gear", "value": 0 } ],
+        "hold": 0.3,
+        "highlight": ["handbrake", "gear"]
+      },
+      {
+        "title": "¡Te has movido por primera vez!",
+        "text": "Esta es la secuencia que repetirás cada vez que salgas: embrague, primera, freno de mano fuera, punto de fricción, un poco de gas y soltar el embrague. Repítela hasta que te salga sin pensar.",
+        "ack": true
+      }
+    ]
+  }
+}

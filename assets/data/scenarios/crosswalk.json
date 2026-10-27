@@ -1,0 +1,265 @@
+{
+  "id": "crosswalk",
+  "name": "Paso de peatones",
+  "description": "Calle con un paso de cebra, peatones que cruzan y coches de frente: cede el paso a quien cruce.",
+  "maneuver": "CROSSWALK",
+  "order": 34,
+  "startPose": {
+    "x": -1.75,
+    "y": 0.9,
+    "z": -10,
+    "yawDeg": 0
+  },
+  "modules": [
+    {
+      "type": "road",
+      "x": 0,
+      "z": 40,
+      "length": 130,
+      "width": 7
+    },
+    {
+      "type": "sidewalk",
+      "x": -4.5,
+      "z": 40,
+      "length": 130,
+      "width": 2
+    },
+    {
+      "type": "sidewalk",
+      "x": 4.5,
+      "z": 40,
+      "length": 130,
+      "width": 2
+    },
+    {
+      "type": "sign",
+      "x": -4.2,
+      "z": 35,
+      "yawDeg": 180,
+      "sign": "crosswalk"
+    },
+    {
+      "type": "sign",
+      "x": 4.2,
+      "z": 45,
+      "yawDeg": 0,
+      "sign": "crosswalk"
+    }
+  ],
+  "markings": [
+    {
+      "kind": "LANE",
+      "points": [
+        [
+          0,
+          -24
+        ],
+        [
+          0,
+          36
+        ]
+      ],
+      "width": 0.12
+    },
+    {
+      "kind": "LANE",
+      "points": [
+        [
+          0,
+          44
+        ],
+        [
+          0,
+          104
+        ]
+      ],
+      "width": 0.12
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          -3,
+          38.5
+        ],
+        [
+          -3,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          -2,
+          38.5
+        ],
+        [
+          -2,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          -1,
+          38.5
+        ],
+        [
+          -1,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          0,
+          38.5
+        ],
+        [
+          0,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          1,
+          38.5
+        ],
+        [
+          1,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          2,
+          38.5
+        ],
+        [
+          2,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "ZEBRA",
+      "points": [
+        [
+          3,
+          38.5
+        ],
+        [
+          3,
+          41.5
+        ]
+      ],
+      "width": 0.5
+    },
+    {
+      "kind": "STOP",
+      "points": [
+        [
+          -3.5,
+          37.5
+        ],
+        [
+          0,
+          37.5
+        ]
+      ],
+      "width": 0.3
+    }
+  ],
+  "zones": [
+    {
+      "name": "finish",
+      "center": [
+        -1.75,
+        85
+      ],
+      "size": [
+        3.4,
+        10
+      ],
+      "yawDeg": 0
+    }
+  ],
+  "params": {
+    "timeLimitSec": 180
+  },
+  "traffic": [
+    {
+      "type": "pedestrian",
+      "path": [
+        [
+          -5,
+          39.4
+        ],
+        [
+          5,
+          39.4
+        ]
+      ],
+      "speedKmh": 4.5,
+      "loop": false,
+      "pingPong": true,
+      "pause": 3,
+      "triggerDistance": 30
+    },
+    {
+      "type": "pedestrian",
+      "path": [
+        [
+          5,
+          40.6
+        ],
+        [
+          -5,
+          40.6
+        ]
+      ],
+      "speedKmh": 4,
+      "loop": false,
+      "pingPong": true,
+      "pause": 5,
+      "delay": 3.5,
+      "triggerDistance": 30
+    },
+    {
+      "type": "car",
+      "path": [
+        [
+          1.75,
+          108
+        ],
+        [
+          1.75,
+          -28
+        ]
+      ],
+      "speedKmh": 30,
+      "count": 2,
+      "gap": 70,
+      "offset": 20
+    }
+  ]
+}

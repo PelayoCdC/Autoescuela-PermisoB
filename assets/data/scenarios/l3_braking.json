@@ -1,0 +1,84 @@
+{
+  "id": "l3_braking",
+  "name": "Frenar y detenerse",
+  "description": "Frena con el motor, frena con el pedal de forma progresiva y detén el coche justo antes de una línea de detención.",
+  "maneuver": "TUTORIAL",
+  "category": "lesson",
+  "order": 53,
+  "startPose": { "x": -1.75, "y": 0.9, "z": 0, "yawDeg": 0 },
+  "modules": [
+    { "type": "road", "x": 0, "z": 100, "length": 280, "width": 7 },
+    { "type": "sidewalk", "x": -4.5, "z": 100, "length": 280, "width": 2 },
+    { "type": "sidewalk", "x": 4.5, "z": 100, "length": 280, "width": 2 },
+    { "type": "sign", "x": -4.2, "z": 121, "yawDeg": 180, "sign": "stop" }
+  ],
+  "curbs": [
+    { "name": "right", "points": [[-3.5, -40], [-3.5, 240]] },
+    { "name": "left", "points": [[3.5, -40], [3.5, 240]] }
+  ],
+  "markings": [
+    { "kind": "LANE", "name": "center", "points": [[0, -40], [0, 240]], "width": 0.12 },
+    { "kind": "STOP", "name": "line", "points": [[-3.4, 120], [-0.1, 120]], "width": 0.4 }
+  ],
+  "zones": [
+    { "name": "stop_box", "center": [-1.75, 112.5], "size": [3.5, 11], "yawDeg": 0 }
+  ],
+  "params": { "timeLimitSec": 100000 },
+  "lesson": {
+    "summary": [
+      "Al soltar el acelerador con una marcha metida, el motor frena el coche: es el freno motor.",
+      "El pedal de freno se pisa de forma progresiva: suave al principio y más firme después.",
+      "Antes de que el coche se detenga hay que pisar el embrague para que el motor no se cale.",
+      "La distancia de detención es la que recorres mientras reaccionas más la que recorres frenando: crece mucho con la velocidad."
+    ],
+    "steps": [
+      {
+        "title": "Frenar bien",
+        "text": "Para detener el coche hay que prever: la distancia de detención es la que recorres mientras reaccionas (alrededor de un segundo) más la que recorres frenando, que se multiplica por cuatro si duplicas la velocidad. Frenar bien es frenar con antelación y de forma progresiva.",
+        "ack": true
+      },
+      {
+        "title": "Sal y acelera",
+        "text": "Sal como en la lección anterior y acelera en primera hasta 15 km/h: embrague, primera, freno de mano fuera, punto de fricción, gas y suelta el embrague.",
+        "goals": [ { "type": "speed", "min": 15 }, { "type": "gear", "value": 1 } ],
+        "hold": 0.3,
+        "highlight": ["speed"],
+        "hint": "{CLUTCH} a fondo, {GEAR_1}, {HANDBRAKE}, mantén {CLUTCH_HALF} con un poco de {THROTTLE} y, cuando avance, suelta."
+      },
+      {
+        "title": "El freno motor",
+        "text": "Suelta el acelerador sin tocar el embrague. El coche pierde velocidad solo: el motor, unido a las ruedas, las retiene. Es el freno motor, y es más fuerte cuanto más corta es la marcha. Deja que baje hasta unos 8 km/h.",
+        "goals": [ { "type": "speed", "max": 8 }, { "type": "throttle", "max": 0.05 }, { "type": "clutch", "max": 0.1 } ],
+        "hold": 0.2,
+        "highlight": ["throttle", "speed"]
+      },
+      {
+        "title": "Acelera otra vez",
+        "text": "Vuelve a acelerar hasta 15 km/h. Más adelante hay una línea de detención con una señal de STOP.",
+        "goals": [ { "type": "speed", "min": 15 } ],
+        "hold": 0.2,
+        "highlight": ["throttle", "speed"]
+      },
+      {
+        "title": "Detente antes de la línea",
+        "text": "Para con el morro justo antes de la línea blanca del STOP. Frena con antelación y de forma progresiva ({BRAKE}) y, cuando vayas muy despacio, pisa el embrague a fondo ({CLUTCH}) para que el motor no se cale.",
+        "goals": [ { "type": "stopped" }, { "type": "zone", "zone": "stop_box", "label": "Parado justo antes de la línea de detención" } ],
+        "hold": 1.0,
+        "highlight": ["brake", "clutch"],
+        "hint": "Si te pasas de la línea, pulsa {RESET} para empezar de nuevo la lección."
+      },
+      {
+        "title": "Asegura el coche",
+        "text": "En un STOP real mirarías a ambos lados antes de seguir. Aquí termina la lección: pon el freno de mano ({HANDBRAKE}) y punto muerto ({GEAR_N}).",
+        "goals": [ { "type": "handbrake", "value": 1 }, { "type": "gear", "value": 0 } ],
+        "hold": 0.3,
+        "highlight": ["handbrake", "gear"]
+      },
+      {
+        "title": "¡Bien frenado!",
+        "text": "Recuerda el orden al detenerte: soltar gas, freno progresivo y embrague justo antes de pararte. En la próxima lección aprenderás a cambiar de marcha.",
+        "ack": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "test_ground",
+  "name": "Explanada de pruebas",
+  "description": "Conducción libre: practica el embrague, los cambios y el arranque en la rampa del 10 %. Sin evaluación.",
+  "maneuver": "FREE_DRIVE",
+  "order": 1,
+  "startPose": { "x": 0, "y": 0.9, "z": 0, "yawDeg": 0 },
+  "modules": [
+    { "type": "road", "x": 0, "z": 0, "length": 200, "width": 40 },
+    { "type": "slope", "x": 0, "z": 30, "length": 40, "width": 20, "gradePct": 10 },
+    { "type": "sidewalk", "x": 21, "z": 0, "length": 60, "width": 2, "curbHeight": 0.14 },
+    { "type": "cone", "x": -6, "z": 15, "name": "c1" },
+    { "type": "cone", "x": -6, "z": 25, "name": "c2" },
+    { "type": "cone", "x": -6, "z": 35, "name": "c3" },
+    { "type": "block", "x": -12, "z": -10, "width": 1, "height": 1, "length": 1, "color": "e69926" },
+    { "type": "block", "x": -12, "z": 0, "width": 1, "height": 1, "length": 1, "color": "e69926" },
+    { "type": "block", "x": -12, "z": 10, "width": 1, "height": 1, "length": 1, "color": "e69926" }
+  ],
+  "curbs": [ { "name": "right", "points": [[20, -30], [20, 30]] } ],
+  "markings": [
+    { "kind": "LANE", "name": "center", "points": [[0, -100], [0, 100]], "width": 0.12 }
+  ],
+  "zones": [],
+  "params": { "timeLimitSec": 100000 }
+}

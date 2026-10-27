@@ -1,0 +1,105 @@
+apply plugin: 'application'
+
+sourceSets.main.resources.srcDirs += [rootProject.file('assets').path]
+
+application {
+    mainClass = 'com.pelayo.autoescuela.lwjgl3.Lwjgl3Launcher'
+}
+
+dependencies {
+    implementation project(':core')
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-desktop"
+    implementation "com.badlogicgames.gdx-controllers:gdx-controllers-desktop:$controllersVersion"
+}
+
+// assets/save, assets/cache y assets/import son datos locales (Gdx.files.local
+// desde el working dir), no recursos del jar.
+processResources {
+    exclude 'save/**', 'cache/**', 'import/**', '*.log'
+}
+
+tasks.named('run') {
+    workingDir = rootProject.file('assets').path
+    setIgnoreExitValue(true)
+}
+
+/**
+ * Comprueba assets/models/car/car.glb (nodos, materiales de espejo, tamaño) sin abrir la app.
+ * gradlew checkCar  |  gradlew checkCar -Pglb=ruta\otro.glb
+ */
+tasks.register('checkCar', JavaExec) {
+    group = 'application'
+    description = 'Comprueba que car.glb tiene los nodos y materiales que espera la app'
+    mainClass = 'com.pelayo.autoescuela.lwjgl3.CarModelCheck'
+    classpath = sourceSets.main.runtimeClasspath
+    workingDir = rootProject.projectDir
+    args = project.hasProperty('glb') ? [project.property('glb').toString()] : []
+}
+
+/**
+ * Genera los PNG de señales de tráfico del módulo de teoría (Java2D) en assets/theory/signs
+ * y una hoja de contacto en assets/cache/signs_sheet.png.
+ * gradlew signs  |  gradlew signs -PsignsOut=otra\carpeta
+ */
+tasks.register('signs', JavaExec) {
+    group = 'application'
+    description = 'Genera las imágenes de señales de tráfico en assets/theory/signs'
+    mainClass = 'com.pelayo.autoescuela.lwjgl3.SignGenerator'
+    classpath = sourceSets.main.runtimeClasspath
+    workingDir = rootProject.projectDir
+    jvmArgs = ['-Djava.awt.headless=true']
+    args = project.hasProperty('signsOut') ? [project.property('signsOut').toString()] : []
+}
+
+/**
+ * Escribe los sonidos sintetizados como WAV y una hoja de espectrogramas en assets/cache/sfx_preview.
+ * gradlew sfxPreview
+ */
+tasks.register('sfxPreview', JavaExec) {
+    group = 'application'
+    description = 'Escribe los sonidos sintetizados y sus espectrogramas en assets/cache/sfx_preview'
+    mainClass = 'com.pelayo.autoescuela.lwjgl3.SfxPreview'
+    classpath = sourceSets.main.runtimeClasspath
+    workingDir = rootProject.projectDir
+    jvmArgs = ['-Djava.awt.headless=true']
+}
+
+/**
+ * Genera el icono de la app (Android, normal y adaptativo, y ventana de escritorio).
+ * gradlew appIcon
+ */
+tasks.register('appIcon', JavaExec) {
+    group = 'application'
+    description = 'Genera los iconos de la app en android/src/main/res y assets/icons'
+    mainClass = 'com.pelayo.autoescuela.lwjgl3.AppIconGenerator'
+    classpath = sourceSets.main.runtimeClasspath
+    workingDir = rootProject.projectDir
+    jvmArgs = ['-Djava.awt.headless=true']
+}
+
+/**
+ * Descarga el texto de los tests de la revista de la DGT (Tráfico y Seguridad Vial) a JSON en bruto.
+ * gradlew dgtRevista | gradlew dgtRevista -Pdesde=270 -Phasta=279 -Pout=ruta.json
+ */
+tasks.register('dgtRevista', JavaExec) {
+    group = 'application'
+    description = 'Descarga los tests de la revista de la DGT (solo texto) a assets/import'
+    mainClass = 'com.pelayo.autoescuela.lwjgl3.RevistaDgtTests'
+    classpath = sourceSets.main.runtimeClasspath
+    workingDir = rootProject.projectDir
+    args = [project.findProperty('desde') ?: '261', project.findProperty('hasta') ?: '279',
+            project.findProperty('out') ?: 'assets/import/revista_dgt_bruto.json']
+}
+
+jar {
+    archiveBaseName.set(appName)
+    duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+    dependsOn configurations.runtimeClasspath
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    manifest {
+        attributes 'Main-Class': application.mainClass
+    }
+}

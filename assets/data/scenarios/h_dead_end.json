@@ -1,0 +1,36 @@
+{
+  "id": "h_dead_end",
+  "name": "H Cambio de sentido en calle sin salida",
+  "description": "Entra por la derecha en la calle sin salida, gira a la izquierda, haz una sola marcha atrás sin tocar el cono ni los bordillos y sal en sentido contrario.",
+  "maneuver": "TURN_AROUND",
+  "order": 21,
+  "category": "exam",
+  "startPose": { "x": -1.75, "y": 0.9, "z": 0, "yawDeg": 0 },
+  "modules": [
+    { "type": "road", "x": 0, "z": 10, "length": 80, "width": 7 },
+    { "type": "road", "x": -12, "z": 23, "yawDeg": 90, "length": 18, "width": 7 },
+    { "type": "sidewalk", "x": 4.5, "z": 10, "length": 80, "width": 2 },
+    { "type": "sidewalk", "x": -4.5, "z": 2, "length": 36, "width": 2 },
+    { "type": "sidewalk", "x": -4.5, "z": 40, "length": 28, "width": 2 },
+    { "type": "sidewalk", "x": -12, "z": 18.5, "yawDeg": 90, "length": 18, "width": 2 },
+    { "type": "sidewalk", "x": -12, "z": 27.5, "yawDeg": 90, "length": 18, "width": 2 },
+    { "type": "wall", "x": -21.2, "z": 23, "yawDeg": 90, "length": 11, "height": 1.2 },
+    { "type": "cone", "x": -8, "z": 25.5, "name": "cono" }
+  ],
+  "curbs": [
+    { "name": "left_main", "points": [[3.5, -30], [3.5, 50]] },
+    { "name": "right_main_before", "points": [[-3.5, -30], [-3.5, 19.5]] },
+    { "name": "right_main_after", "points": [[-3.5, 26.5], [-3.5, 50]] },
+    { "name": "street_near", "points": [[-3.5, 19.5], [-21, 19.5]] },
+    { "name": "street_far", "points": [[-3.5, 26.5], [-21, 26.5]] },
+    { "name": "street_end", "points": [[-21, 19.5], [-21, 26.5]] }
+  ],
+  "markings": [
+    { "kind": "LANE", "name": "center", "points": [[0, -30], [0, 50]], "width": 0.12 }
+  ],
+  "zones": [
+    { "name": "street", "center": [-12, 23], "size": [7, 18], "yawDeg": -90 },
+    { "name": "exit_done", "center": [1.75, 6], "size": [3.5, 8], "yawDeg": 0 }
+  ],
+  "params": { "timeLimitSec": 300 }
+}

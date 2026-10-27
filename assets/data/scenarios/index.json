@@ -1,0 +1,22 @@
+[
+  "l1_controls",
+  "l2_start_moving",
+  "l3_braking",
+  "l4_gears",
+  "l5_reverse",
+  "l6_steering",
+  "l7_stall",
+  "l8_hill",
+  "test_ground",
+  "start_no_stall",
+  "hill_start",
+  "stop_sign",
+  "roundabout",
+  "crosswalk",
+  "i1_parallel_basic",
+  "i2_angled",
+  "i3_perpendicular",
+  "g_reverse_curve",
+  "h_dead_end",
+  "exam_route"
+]

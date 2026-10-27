@@ -1,0 +1,84 @@
+{
+  "id": "l7_stall",
+  "name": "Si se te cala el coche",
+  "description": "Por qué se cala el motor, cómo provocarlo a propósito para reconocerlo y cómo recuperarse con calma.",
+  "maneuver": "TUTORIAL",
+  "category": "lesson",
+  "order": 57,
+  "startPose": { "x": -1.75, "y": 0.9, "z": 0, "yawDeg": 0 },
+  "modules": [
+    { "type": "road", "x": 0, "z": 100, "length": 280, "width": 7 },
+    { "type": "sidewalk", "x": -4.5, "z": 100, "length": 280, "width": 2 },
+    { "type": "sidewalk", "x": 4.5, "z": 100, "length": 280, "width": 2 }
+  ],
+  "curbs": [
+    { "name": "right", "points": [[-3.5, -40], [-3.5, 240]] },
+    { "name": "left", "points": [[3.5, -40], [3.5, 240]] }
+  ],
+  "markings": [ { "kind": "LANE", "name": "center", "points": [[0, -40], [0, 240]], "width": 0.12 } ],
+  "zones": [],
+  "params": { "timeLimitSec": 100000 },
+  "lesson": {
+    "summary": [
+      "El motor se cala cuando las ruedas lo frenan por debajo de su régimen mínimo: al soltar el embrague de golpe o al parar sin pisarlo.",
+      "Si se cala: embrague a fondo, punto muerto (o embrague pisado), y arrancar de nuevo con la llave.",
+      "En una cuesta, además, sujeta el coche con el freno antes de volver a arrancar.",
+      "Calarse en el examen es una falta leve; lo importante es recuperarse con calma y seguridad."
+    ],
+    "steps": [
+      {
+        "title": "¿Por qué se cala un coche?",
+        "text": "El motor necesita girar al menos a unas 800 rpm para mantenerse en marcha. Si está unido a las ruedas (embrague suelto y marcha metida) y las ruedas giran demasiado despacio, lo arrastran por debajo de ese mínimo y se para. Pasa al soltar el embrague de golpe o al frenar hasta pararte sin pisar el embrague. Vamos a provocarlo para que lo reconozcas.",
+        "ack": true,
+        "highlight": ["tacho"]
+      },
+      {
+        "title": "Sal en primera",
+        "text": "Sal como siempre y acelera en primera hasta unos 10 km/h.",
+        "goals": [ { "type": "speed", "min": 10 }, { "type": "gear", "value": 1 } ],
+        "hold": 0.2,
+        "hint": "{CLUTCH} a fondo, {GEAR_1}, {HANDBRAKE}, mantén {CLUTCH_HALF} con un poco de {THROTTLE} y, cuando avance, suelta."
+      },
+      {
+        "title": "Frena sin pisar el embrague",
+        "text": "Ahora haz lo que no se debe: suelta el gas y frena a fondo ({BRAKE}) hasta parar SIN pisar el embrague. Fíjate en cómo caen las revoluciones hasta que el motor se para.",
+        "goals": [ { "type": "event", "event": "STALL" } ],
+        "hold": 0.0,
+        "highlight": ["brake", "tacho"]
+      },
+      {
+        "title": "Embrague y punto muerto",
+        "text": "Se ha calado. Mantén el freno pisado para que el coche no se mueva, pisa el embrague a fondo ({CLUTCH}) y pon punto muerto ({GEAR_N}).",
+        "goals": [ { "type": "gear", "value": 0 }, { "type": "clutch", "min": 0.9 } ],
+        "hold": 0.3,
+        "highlight": ["clutch", "gear"]
+      },
+      {
+        "title": "Arranca de nuevo",
+        "text": "Con el embrague pisado, gira la llave ({IGNITION}).",
+        "goals": [ { "type": "engine", "value": 1 } ],
+        "hold": 0.5,
+        "highlight": ["tacho"]
+      },
+      {
+        "title": "Sal otra vez, ahora bien",
+        "text": "Primera, punto de fricción, un poco de gas y suelta el embrague con suavidad. Avanza 15 metros sin calar.",
+        "goals": [ { "type": "distance", "meters": 15 }, { "type": "clutch", "max": 0.05 } ],
+        "hold": 0.2,
+        "highlight": ["clutch", "throttle"]
+      },
+      {
+        "title": "Ahora para bien",
+        "text": "Detente pisando el embrague antes de que el coche se pare. Después, freno de mano ({HANDBRAKE}) y punto muerto ({GEAR_N}).",
+        "goals": [ { "type": "stopped" }, { "type": "handbrake", "value": 1 }, { "type": "gear", "value": 0 } ],
+        "hold": 0.3,
+        "highlight": ["clutch", "brake", "handbrake"]
+      },
+      {
+        "title": "¡Sin miedo a calarse!",
+        "text": "Calarse le pasa a todo el mundo. Lo importante es no ponerse nervioso: embrague, punto muerto, arrancar y volver a salir.",
+        "ack": true
+      }
+    ]
+  }
+}

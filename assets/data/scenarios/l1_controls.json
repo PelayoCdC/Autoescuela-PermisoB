@@ -1,0 +1,117 @@
+{
+  "id": "l1_controls",
+  "name": "Conoce los mandos",
+  "description": "Los tres pedales, el volante, el freno de mano, los intermitentes y mirar alrededor. Con el coche parado y el motor al ralentí.",
+  "maneuver": "TUTORIAL",
+  "category": "lesson",
+  "order": 51,
+  "startPose": { "x": -1.75, "y": 0.9, "z": 0, "yawDeg": 0 },
+  "modules": [
+    { "type": "road", "x": 0, "z": 60, "length": 200, "width": 7 },
+    { "type": "sidewalk", "x": -4.5, "z": 60, "length": 200, "width": 2 },
+    { "type": "sidewalk", "x": 4.5, "z": 60, "length": 200, "width": 2 }
+  ],
+  "curbs": [
+    { "name": "right", "points": [[-3.5, -40], [-3.5, 160]] },
+    { "name": "left", "points": [[3.5, -40], [3.5, 160]] }
+  ],
+  "markings": [ { "kind": "LANE", "name": "center", "points": [[0, -40], [0, 160]], "width": 0.12 } ],
+  "zones": [],
+  "params": { "timeLimitSec": 100000 },
+  "lesson": {
+    "summary": [
+      "Un coche manual tiene tres pedales: embrague (pie izquierdo), freno y acelerador (pie derecho).",
+      "El acelerador sube las revoluciones del motor; sin marcha metida el coche no se mueve.",
+      "El embrague desconecta el motor de las ruedas mientras está pisado. El punto de fricción es la zona en la que empieza a conectarlos.",
+      "El freno de mano mantiene el coche inmovilizado cuando está parado.",
+      "Antes de moverte hay que señalizar con el intermitente y mirar alrededor y por los espejos."
+    ],
+    "steps": [
+      {
+        "title": "Bienvenido al Renault Clio",
+        "text": "Estás sentado al volante con el motor al ralentí, la palanca en punto muerto y el freno de mano puesto. Un coche de cambio manual tiene tres pedales. De izquierda a derecha: embrague, freno y acelerador. El pie izquierdo solo pisa el embrague; el derecho pasa del freno al acelerador. Para pisarlos usa {CLUTCH}, {BRAKE} y {THROTTLE}. Abajo a la izquierda ves cuánto está pisado cada pedal.",
+        "ack": true,
+        "highlight": ["clutch", "brake", "throttle"]
+      },
+      {
+        "title": "El acelerador",
+        "text": "Pisa el acelerador ({THROTTLE}) y mira el cuentarrevoluciones: la aguja sube porque el motor gira más deprisa. El coche no se mueve porque no hay ninguna marcha metida: el motor gira «en vacío» y, sin carga, sube de vueltas con muy poco gas. Con el teclado, cuanto más tiempo mantengas la tecla más se pisa el pedal: un toque corto es poco gas; al soltar, el motor vuelve al ralentí (unas 800 rpm).",
+        "goals": [ { "type": "rpm", "min": 2000 } ],
+        "hold": 0.5,
+        "highlight": ["throttle", "tacho"],
+        "hint": "Mantén {THROTTLE} pulsado hasta que la aguja pase de 2 (2.000 rpm)."
+      },
+      {
+        "title": "El freno",
+        "text": "Ahora pisa el freno ({BRAKE}). El freno detiene el coche y lo mantiene quieto. Se pisa siempre de forma progresiva: suave al principio y más fuerte después.",
+        "goals": [ { "type": "brake", "min": 0.9 } ],
+        "hold": 0.5,
+        "highlight": ["brake"]
+      },
+      {
+        "title": "El embrague",
+        "text": "El embrague es un disco que une el motor con la caja de cambios. Pisado, el motor queda desconectado de las ruedas: así se puede cambiar de marcha o parar sin que el motor se cale. Suelto, la fuerza del motor llega a las ruedas. Písalo a fondo ({CLUTCH}) y mantenlo.",
+        "goals": [ { "type": "clutch", "min": 0.95 } ],
+        "hold": 1.0,
+        "highlight": ["clutch"]
+      },
+      {
+        "title": "Soltar el embrague",
+        "text": "Suelta {CLUTCH}. El pedal no sube de golpe: sube despacio, como cuando levantas el pie con cuidado. Fíjate en la franja ámbar de la barra del embrague: es el punto de fricción, donde el motor empieza a empujar las ruedas.",
+        "goals": [ { "type": "clutch", "max": 0.05 } ],
+        "hold": 0.3,
+        "highlight": ["clutch"]
+      },
+      {
+        "title": "El punto de fricción",
+        "text": "Para arrancar hay que dejar el embrague justo en el punto de fricción. Mantén {CLUTCH_HALF}: el pedal se queda en medio, dentro de la franja ámbar. En un coche real lo notarás porque el motor baja un poco de vueltas y el coche «tira» suavemente.",
+        "goals": [ { "type": "clutch", "min": 0.35, "max": 0.7 } ],
+        "hold": 1.0,
+        "highlight": ["clutch"]
+      },
+      {
+        "title": "El volante",
+        "text": "Gira el volante hasta el tope a la izquierda con {STEER_LEFT}. Al soltar la tecla, el volante vuelve solo al centro, como en un coche real cuando avanzas.",
+        "goals": [ { "type": "steer", "min": 0.9 } ],
+        "hold": 0.2
+      },
+      {
+        "title": "Ahora a la derecha",
+        "text": "Gira el volante hasta el tope a la derecha con {STEER_RIGHT}.",
+        "goals": [ { "type": "steer", "max": -0.9 } ],
+        "hold": 0.2
+      },
+      {
+        "title": "Los intermitentes",
+        "text": "Antes de salir, cambiar de carril o girar hay que avisar con el intermitente. Para salir desde la derecha de la calzada se pone el izquierdo: {INDICATOR_LEFT}.",
+        "goals": [ { "type": "indicator", "value": -1 } ],
+        "highlight": ["indicators"]
+      },
+      {
+        "title": "Mirar antes de moverte",
+        "text": "Antes de incorporarte, comprueba por los espejos y mirando por encima del hombro el ángulo muerto, la zona que no se ve en los espejos. Mantén {LOOK_BACK} para girar la cabeza. También puedes mirar a los lados con {LOOK_LEFT} y {LOOK_RIGHT}.",
+        "goals": [ { "type": "look" } ],
+        "hold": 0.5
+      },
+      {
+        "title": "El freno de mano",
+        "text": "El freno de mano (o de estacionamiento) inmoviliza el coche cuando está parado. Pisa el freno ({BRAKE}) y, sin soltarlo, quita el freno de mano con {HANDBRAKE}. Fíjate en que se apaga el testigo rojo (P).",
+        "goals": [ { "type": "handbrake", "value": 0 }, { "type": "brake", "min": 0.5 } ],
+        "hold": 0.3,
+        "highlight": ["handbrake", "brake"]
+      },
+      {
+        "title": "Vuelve a ponerlo",
+        "text": "Pon otra vez el freno de mano ({HANDBRAKE}) y suelta el freno. Siempre que dejes el coche parado, freno de mano puesto.",
+        "goals": [ { "type": "handbrake", "value": 1 }, { "type": "brake", "max": 0.05 } ],
+        "hold": 0.3,
+        "highlight": ["handbrake"]
+      },
+      {
+        "title": "¡Ya conoces los mandos!",
+        "text": "En la siguiente lección arrancarás el motor y harás que el coche se mueva por primera vez. Si alguna vez olvidas una tecla, pulsa {HELP} para ver todos los controles.",
+        "ack": true
+      }
+    ]
+  }
+}

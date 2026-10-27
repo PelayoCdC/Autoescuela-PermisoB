@@ -1,0 +1,3 @@
+rootProject.name = 'Autoescuela'
+
+include ':core', ':lwjgl3', ':android'

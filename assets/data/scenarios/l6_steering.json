@@ -1,0 +1,93 @@
+{
+  "id": "l6_steering",
+  "name": "Girar con el volante",
+  "description": "Recorre un eslalon de puertas de conos a poca velocidad: mira hacia donde quieres ir, gira con suavidad y señaliza con el intermitente.",
+  "maneuver": "TUTORIAL",
+  "category": "lesson",
+  "order": 56,
+  "startPose": { "x": 0, "y": 0.9, "z": 0, "yawDeg": 0 },
+  "modules": [
+    { "type": "road", "x": 0, "z": 60, "length": 200, "width": 30 },
+    { "type": "cone", "x": 1.7, "z": 20, "name": "p1_i" },
+    { "type": "cone", "x": -1.7, "z": 20, "name": "p1_d" },
+    { "type": "cone", "x": 7.7, "z": 40, "name": "p2_i" },
+    { "type": "cone", "x": 4.3, "z": 40, "name": "p2_d" },
+    { "type": "cone", "x": 1.7, "z": 60, "name": "p3_i" },
+    { "type": "cone", "x": -1.7, "z": 60, "name": "p3_d" },
+    { "type": "cone", "x": -4.3, "z": 80, "name": "p4_i" },
+    { "type": "cone", "x": -7.7, "z": 80, "name": "p4_d" }
+  ],
+  "curbs": [],
+  "markings": [
+    { "kind": "BAY", "name": "finish", "center": [-6, 104], "size": [2.8, 6], "yawDeg": 0 }
+  ],
+  "zones": [
+    { "name": "gate1", "center": [0, 20], "size": [3.2, 2.5], "yawDeg": 0 },
+    { "name": "gate2", "center": [6, 40], "size": [3.2, 2.5], "yawDeg": 0 },
+    { "name": "gate3", "center": [0, 60], "size": [3.2, 2.5], "yawDeg": 0 },
+    { "name": "gate4", "center": [-6, 80], "size": [3.2, 2.5], "yawDeg": 0 },
+    { "name": "finish", "center": [-6, 104], "size": [2.8, 3.5], "yawDeg": 0 }
+  ],
+  "params": { "timeLimitSec": 100000 },
+  "lesson": {
+    "summary": [
+      "Mira hacia donde quieres ir: las manos siguen a la mirada.",
+      "Gira con suavidad y a poca velocidad; reduce antes de la curva, no en mitad de ella.",
+      "Al terminar el giro, el volante vuelve al centro: acompáñalo.",
+      "Antes de cambiar de dirección, señaliza con el intermitente y apágalo al terminar."
+    ],
+    "steps": [
+      {
+        "title": "Dirigir el coche",
+        "text": "Vas a pasar entre cuatro puertas de conos en zigzag. Claves: ve despacio (en primera o segunda, a menos de 15 km/h), mira a la puerta siguiente y no al cono, y gira el volante con suavidad ({STEER_LEFT} y {STEER_RIGHT}). Al soltar, el volante vuelve solo al centro.",
+        "ack": true
+      },
+      {
+        "title": "Primera puerta",
+        "text": "Sal en primera y pasa por la primera puerta, recta delante de ti.",
+        "goals": [ { "type": "zone", "zone": "gate1", "label": "Pasa entre los conos de la puerta 1" } ],
+        "hold": 0.05,
+        "hint": "{CLUTCH} a fondo, {GEAR_1}, {HANDBRAKE}, mantén {CLUTCH_HALF} con un poco de {THROTTLE} y, cuando avance, suelta."
+      },
+      {
+        "title": "Intermitente a la izquierda",
+        "text": "La segunda puerta está a la izquierda. Antes de desviarte, avisa con el intermitente izquierdo ({INDICATOR_LEFT}).",
+        "goals": [ { "type": "indicator", "value": -1 } ],
+        "hold": 0.1,
+        "highlight": ["indicators"]
+      },
+      {
+        "title": "Segunda puerta",
+        "text": "Gira con suavidad a la izquierda y pasa por la segunda puerta.",
+        "goals": [ { "type": "zone", "zone": "gate2", "label": "Pasa entre los conos de la puerta 2" } ],
+        "hold": 0.05,
+        "hint": "Si te pasas de largo, para, recula un poco y vuelve a intentarlo, o pulsa {RESET} para empezar de nuevo."
+      },
+      {
+        "title": "Tercera puerta",
+        "text": "Apaga el intermitente pulsando otra vez {INDICATOR_LEFT}, vuelve al centro y pasa por la tercera puerta.",
+        "goals": [ { "type": "zone", "zone": "gate3", "label": "Pasa entre los conos de la puerta 3" }, { "type": "indicator", "value": 0 } ],
+        "hold": 0.05
+      },
+      {
+        "title": "Cuarta puerta",
+        "text": "La última está a la derecha: pon el intermitente derecho ({INDICATOR_RIGHT}), gira y pasa entre los conos.",
+        "goals": [ { "type": "zone", "zone": "gate4", "label": "Pasa entre los conos de la puerta 4" } ],
+        "hold": 0.05,
+        "highlight": ["indicators"]
+      },
+      {
+        "title": "Para en la plaza",
+        "text": "Sigue recto y detente dentro del rectángulo pintado al fondo. Apaga el intermitente.",
+        "goals": [ { "type": "zone", "zone": "finish", "label": "Coche dentro del rectángulo" }, { "type": "stopped" }, { "type": "indicator", "value": 0 } ],
+        "hold": 0.5,
+        "highlight": ["brake", "clutch"]
+      },
+      {
+        "title": "¡Buen recorrido!",
+        "text": "Ya controlas la dirección. Con todo lo aprendido puedes practicar los ejercicios y las maniobras del examen.",
+        "ack": true
+      }
+    ]
+  }
+}
