@@ -16,6 +16,16 @@ App de escritorio (Windows/Linux/macOS) y Android para preparar el permiso de co
   simulacro del examen oficial (30 preguntas, 30 minutos, máximo 3 fallos), repaso de falladas, estadísticas e
   importación de bancos de preguntas propios (JSON/CSV).
 
+## Capturas
+
+| Recorrido de examen | Aparcamiento en línea |
+|---|---|
+| ![Recorrido de examen por ciudad desde el asiento del conductor](docs/capturas/ruta-examen.jpg) | ![Maniobra de aparcamiento en línea junto a otro coche](docs/capturas/aparcamiento.jpg) |
+
+| Aprende a conducir | Teoría y tests | Simulacro de examen |
+|---|---|---|
+| ![Lista de lecciones guiadas](docs/capturas/lecciones.jpg) | ![Temario con tests por tema](docs/capturas/teoria.jpg) | ![Pregunta del simulacro de examen](docs/capturas/examen.jpg) |
+
 ## Lecciones
 
 | Lección | Qué se aprende |
